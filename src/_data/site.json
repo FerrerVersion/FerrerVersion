@@ -1,7 +1,7 @@
 {
   "name": "FerrerVersion",
   "author": "Jorge Ferrer",
-  "url": "https://ferrerversion.github.io/Prueba1",
+  "url": "https://ferrerversion.github.io/FerrerVersion",
   "themeColor": "#0a0908",
   "cv": "/assets/files/JorgeFerrerGil-CV.pdf",
   "contact": {
@@ -9,8 +9,8 @@
     "emailHref": "mailto:jorgeferrerg05@gmail.com",
     "whatsapp": "+34 747 863 493",
     "whatsappHref": "https://wa.me/34747863493",
-    "github": "[USUARIO DE GITHUB PENDIENTE]",
-    "githubHref": null,
+    "github": "FerrerVersion",
+    "githubHref": "https://github.com/FerrerVersion",
     "linkedin": "Jorge Ferrer Gil",
     "linkedinHref": "https://www.linkedin.com/in/jorge-ferrer-gil-5008b423a/"
   }
