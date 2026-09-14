@@ -1,0 +1,124 @@
+{% from "partials/icons.njk" import icon %}
+{% set c = project[lang] %}
+{% set homePath = "/" if lang == "es" else "/en/" %}
+
+<article class="case-hero container">
+  <a class="case-hero__back link-underline" href="{{ homePath }}#proyectos">
+    {{ icon("arrow-right") }} {{ t.volverProyectos }}
+  </a>
+
+  <p class="kicker">{{ (project.platform[lang]) }}</p>
+  <h1 class="case-hero__title">{{ c.nombre }}</h1>
+  <p class="case-hero__summary">{{ c.resumen }}</p>
+
+  <dl class="case-meta">
+    <div>
+      <dt>{{ t.case.plataforma }}</dt>
+      <dd>{{ project.platform[lang] }}</dd>
+    </div>
+    <div>
+      <dt>{{ t.case.anio }}</dt>
+      <dd>{{ project.year }}</dd>
+    </div>
+    <div style="grid-column: span 2;">
+      <dt>{{ t.case.tecnologias }}</dt>
+      <dd style="display:flex; flex-wrap:wrap; gap: var(--sp-2); font-family: var(--font-mono); font-size: 0.85rem;">
+        {% if project.tech and project.tech.length > 0 %}
+          {% for item in project.tech %}<span class="tag">{{ item }}</span>{% endfor %}
+        {% else %}
+          <span class="placeholder-note">{{ t.case.enlacePendiente }}</span>
+        {% endif %}
+      </dd>
+    </div>
+  </dl>
+</article>
+
+<div class="container case-carousel-wrap" style="margin-bottom: var(--sp-16);">
+  {% if project.images and project.images.length > 0 %}
+  <div class="case-carousel" data-carousel>
+    <div class="case-carousel__track" data-carousel-track>
+      {% for image in project.images %}
+      <figure class="case-carousel__slide" data-carousel-slide>
+        <img src="{{ image.src }}" alt="{{ image.caption[lang] or c.nombre }}" loading="{{ 'eager' if loop.first else 'lazy' }}" />
+        {% if image.caption[lang] %}<figcaption>{{ image.caption[lang] }}</figcaption>{% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+    {% if project.images.length > 1 %}
+    <button class="case-carousel__arrow case-carousel__arrow--prev" type="button" data-carousel-prev aria-label="{{ 'Captura anterior' if lang == 'es' else 'Previous screenshot' }}">{{ icon("arrow-right") }}</button>
+    <button class="case-carousel__arrow case-carousel__arrow--next" type="button" data-carousel-next aria-label="{{ 'Captura siguiente' if lang == 'es' else 'Next screenshot' }}">{{ icon("arrow-right") }}</button>
+    {% endif %}
+  </div>
+  {% if project.images.length > 1 %}
+  <div class="case-carousel__dots" data-carousel-dots role="tablist" aria-label="{{ t.case.galeria }}">
+    {% for image in project.images %}
+    <button class="case-carousel__dot" type="button" data-carousel-dot="{{ loop.index0 }}" aria-label="{{ t.case.galeria }} {{ loop.index }}"></button>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% else %}
+  <div class="case-media">
+    <span class="project-card__placeholder">{{ t.case.capturasPendientes }}</span>
+  </div>
+  {% endif %}
+</div>
+
+<section class="container" style="margin-bottom: var(--sp-24);">
+  <div class="case-blocks">
+    <div>
+      <p class="case-block__title">{{ t.case.problema }}</p>
+      <p class="case-block__text">{{ c.problema }}</p>
+    </div>
+    <div>
+      <p class="case-block__title">{{ t.case.miPapel }}</p>
+      <p class="case-block__text">{{ c.miPapel }}</p>
+    </div>
+    <div>
+      <p class="case-block__title">{{ t.case.solucion }}</p>
+      <p class="case-block__text">{{ c.solucion }}</p>
+    </div>
+  </div>
+
+  <div class="case-links">
+    {% if project.links.demo %}
+    <a class="btn btn-primary" href="{{ project.links.demo }}">{{ t.case.verDemo }} {{ icon("arrow-up-right") }}</a>
+    {% endif %}
+    {% if project.links.github %}
+    <a class="btn btn-secondary" href="{{ project.links.github }}">{{ t.case.verCodigo }} {{ icon("arrow-up-right") }}</a>
+    {% endif %}
+    {% if project.links.external %}
+    <a class="btn btn-secondary" href="{{ project.links.external }}">{{ t.case.visitar }} {{ icon("arrow-up-right") }}</a>
+    {% endif %}
+    {% if project.links.memoria %}
+    <a class="btn btn-secondary" href="{{ project.links.memoria }}">{{ t.case.verMemoria }} {{ icon("arrow-up-right") }}</a>
+    {% endif %}
+    {% if not project.links.demo and not project.links.github and not project.links.external and not project.links.memoria %}
+    <span class="placeholder-note">{{ t.case.enlacePendiente }}</span>
+    {% endif %}
+  </div>
+</section>
+
+{% if c.arquitectura or c.aprendizajes %}
+<section class="section section--alt">
+  <div class="container case-blocks">
+    {% if c.arquitectura %}
+    <div>
+      <p class="case-block__title">{{ t.case.arquitectura }}</p>
+      <p class="case-block__text">{{ c.arquitectura }}</p>
+    </div>
+    {% endif %}
+    {% if c.aprendizajes %}
+    <div>
+      <p class="case-block__title">{{ t.case.aprendizajes }}</p>
+      <p class="case-block__text">{{ c.aprendizajes }}</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<section class="section section--alt" style="padding-block: var(--sp-16);">
+  <div class="container" style="text-align:center;">
+    <a class="btn btn-secondary" href="{{ homePath }}#proyectos">{{ t.irAlDetalle }}</a>
+  </div>
+</section>

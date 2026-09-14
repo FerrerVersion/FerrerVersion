@@ -1,0 +1,240 @@
+{
+  "es": {
+    "hero": {
+      "kicker": "Desarrollo web y de aplicaciones a medida",
+      "headlineLines": ["Tu idea, convertida", "en un producto digital real."],
+      "lede": "Soy Jorge Ferrer. Bajo el nombre FerrerVersion desarrollo páginas web, aplicaciones y sistemas a medida para negocios y proyectos que necesitan una solución hecha con criterio — no una plantilla más.",
+      "ctaPrimary": "Hablemos de tu proyecto",
+      "ctaSecondary": "Ver proyectos",
+      "meta": [
+        { "label": "Especialidad", "value": "Desarrollo web y de aplicaciones a medida" },
+        { "label": "Formación", "value": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma" },
+        { "label": "Disponibilidad", "value": "Abierto a nuevos proyectos" }
+      ]
+    },
+    "valueProp": {
+      "kicker": "01 — Propuesta de valor",
+      "leadBefore": "No me limito a una única tecnología: me adapto a ",
+      "leadEm": "lo que tu proyecto realmente necesita",
+      "leadAfter": ".",
+      "paragraphs": [
+        "Cada negocio tiene un problema distinto, así que cada solución debería ser distinta también. Trabajo contigo para entender qué necesitas de verdad — no para venderte la tecnología de moda — y construyo la web, aplicación o sistema que mejor resuelve ese problema.",
+        "Eso significa que puedo ayudarte tanto si necesitas una web que represente bien tu negocio, como una aplicación con la que tus clientes reserven, compren o se registren, o un sistema interno que te ahorre horas de trabajo manual."
+      ]
+    },
+    "services": {
+      "kicker": "02 — Servicios",
+      "heading": "En qué puedo ayudarte",
+      "lead": "Cuatro áreas donde puedo aportar valor real a tu negocio, explicadas en problemas — no en tecnologías.",
+      "items": [
+        {
+          "icon": "store",
+          "title": "Webs que representan tu negocio",
+          "desc": "Páginas y sitios corporativos rápidos, bien estructurados y pensados para convertir visitas en contactos — sin plantillas genéricas ni cargas eternas.",
+          "examples": ["Sitios corporativos", "Landing pages", "Portfolios"]
+        },
+        {
+          "icon": "smartphone",
+          "title": "Aplicaciones a medida",
+          "desc": "Apps para que tus clientes reserven, compren, se registren o gestionen su actividad desde el móvil, con la lógica de negocio adaptada a cómo trabajas de verdad.",
+          "examples": ["Android", "iOS", "Multiplataforma"]
+        },
+        {
+          "icon": "database",
+          "title": "Sistemas y paneles de gestión",
+          "desc": "Catálogos, reservas, pedidos, autenticación de usuarios y paneles de administración que centralizan lo que hoy gestionas a mano o en varias herramientas sueltas.",
+          "examples": ["Bases de datos", "CRUD", "Paneles de administración"]
+        },
+        {
+          "icon": "wrench",
+          "title": "Mantenimiento y mejora",
+          "desc": "Si ya tienes una web o aplicación, puedo revisarla, corregir problemas y añadir funcionalidades nuevas sin rehacer lo que ya funciona.",
+          "examples": ["Correcciones", "Nuevas funciones", "Integraciones"]
+        }
+      ]
+    },
+    "process": {
+      "kicker": "03 — Cómo trabajo",
+      "heading": "Un proceso claro, de principio a fin",
+      "lead": "Sabes en todo momento en qué punto está tu proyecto.",
+      "steps": [
+        {
+          "title": "Conversación inicial",
+          "desc": "Me cuentas tu idea o problema. Sin tecnicismos: quiero entender el negocio antes que la tecnología."
+        },
+        {
+          "title": "Propuesta y alcance",
+          "desc": "Definimos juntos qué se va a construir, con qué prioridad y qué necesitas realmente para lanzar."
+        },
+        {
+          "title": "Desarrollo",
+          "desc": "Construyo la solución con actualizaciones regulares, para que veas el progreso real, no solo el resultado final."
+        },
+        {
+          "title": "Entrega y seguimiento",
+          "desc": "Pongo el proyecto en marcha y sigo disponible para ajustes, dudas o siguientes fases."
+        }
+      ]
+    },
+    "portfolio": {
+      "kicker": "04 — Portfolio",
+      "heading": "Proyectos",
+      "lead": "Una muestra de en qué he estado trabajando. Cada proyecto incluye su contexto real: qué problema había, qué hice y cómo lo resolví."
+    },
+    "about": {
+      "kicker": "05 — Sobre mí",
+      "heading": "Quién hay detrás de FerrerVersion",
+      "paragraphs": [
+        "Soy Jorge, desarrollador con formación en Grado Superior en Desarrollo de Aplicaciones Multiplataforma y Grado Medio en Sistemas Microinformáticos y Redes. Empecé por el lado más técnico — montar equipos, resolver incidencias, instalar sistemas — antes de especializarme en programación, y esa base sigue marcando cómo trabajo: entender primero cómo funciona algo, para después construirlo bien.",
+        "Durante mis prácticas profesionales desarrollé desde cero una <strong>aplicación Android nativa completa</strong> para un negocio real, con autenticación, base de datos, panel de administración y varias integraciones — el tipo de proyecto que obliga a tomar decisiones técnicas de verdad, no solo seguir un tutorial.",
+        "Hoy, bajo FerrerVersion, ayudo a negocios y proyectos a convertir una idea en algo que funciona: con criterio, sin atajos y con la tecnología que cada proyecto necesita — no la que está de moda."
+      ],
+      "timeline": [
+        { "period": "Grado Superior", "title": "Desarrollo de Aplicaciones Multiplataforma (DAM)", "place": "Progresa, Valencia" },
+        { "period": "Grado Medio", "title": "Sistemas Microinformáticos y Redes (SMR)", "place": "Complejo Educativo de Cheste" },
+        { "period": "Prácticas profesionales", "title": "Desarrollo Android nativo con Kotlin y Firebase", "place": "Lourdes Iniesta — Centro de Salud y Belleza, Valencia" }
+      ]
+    },
+    "capabilities": {
+      "kicker": "06 — Capacidades",
+      "heading": "Con qué trabajo",
+      "lead": "Sin porcentajes ni barras de progreso: estas son las herramientas con las que construyo software real hoy.",
+      "groups": [
+        { "title": "Desarrollo móvil", "items": ["Kotlin", "Android nativo", "Firebase", "Firestore"] },
+        { "title": "Desarrollo web", "items": ["HTML", "CSS", "JavaScript"] },
+        { "title": "Datos y sistemas", "items": ["Autenticación de usuarios", "Bases de datos", "Paneles de administración"] },
+        { "title": "Herramientas y flujo", "items": ["Git y GitHub", "Sistemas operativos", "Redes y sistemas microinformáticos"] }
+      ]
+    },
+    "ctaFinal": {
+      "headline": "¿Tienes una idea o un problema que resolver?",
+      "sub": "Cuéntame de qué se trata. Sin compromiso ni tecnicismos: solo una conversación para ver cómo puedo ayudarte.",
+      "cta": "Hablemos de tu proyecto"
+    },
+    "contact": {
+      "kicker": "07 — Contacto",
+      "intro": "Empecemos con una conversación.",
+      "sub": "Escríbeme por el canal que prefieras. Normalmente respondo en poco tiempo.",
+      "labels": { "email": "Email", "whatsapp": "WhatsApp", "github": "GitHub", "linkedin": "LinkedIn", "cv": "Currículum" }
+    }
+  },
+  "en": {
+    "hero": {
+      "kicker": "Web and custom application development",
+      "headlineLines": ["Your idea, turned into", "a real digital product."],
+      "lede": "I'm Jorge Ferrer. Under the name FerrerVersion I build websites, applications and custom systems for businesses and projects that need a solution built with judgment — not another template.",
+      "ctaPrimary": "Let's talk about your project",
+      "ctaSecondary": "View projects",
+      "meta": [
+        { "label": "Focus", "value": "Web and custom application development" },
+        { "label": "Background", "value": "Higher Diploma in Multi-platform Application Development" },
+        { "label": "Availability", "value": "Open to new projects" }
+      ]
+    },
+    "valueProp": {
+      "kicker": "01 — Value proposition",
+      "leadBefore": "I don't lock myself into one technology — I adapt to ",
+      "leadEm": "what your project actually needs",
+      "leadAfter": ".",
+      "paragraphs": [
+        "Every business has a different problem, so every solution should be different too. I work with you to understand what you actually need — not to sell you whatever's trending — and build the website, application or system that best solves that problem.",
+        "That means I can help whether you need a website that represents your business well, an app your customers use to book, buy or sign up, or an internal system that saves you hours of manual work."
+      ]
+    },
+    "services": {
+      "kicker": "02 — Services",
+      "heading": "How I can help",
+      "lead": "Four areas where I can bring real value to your business, explained through problems — not technologies.",
+      "items": [
+        {
+          "icon": "store",
+          "title": "Websites that represent your business",
+          "desc": "Fast, well-structured corporate sites designed to turn visits into contacts — no generic templates, no endless loading.",
+          "examples": ["Corporate sites", "Landing pages", "Portfolios"]
+        },
+        {
+          "icon": "smartphone",
+          "title": "Custom applications",
+          "desc": "Apps that let your customers book, buy, sign up or manage their activity from their phone, with business logic that matches how you actually work.",
+          "examples": ["Android", "iOS", "Cross-platform"]
+        },
+        {
+          "icon": "database",
+          "title": "Systems and admin dashboards",
+          "desc": "Catalogs, bookings, orders, user authentication and admin panels that centralize what you currently manage by hand or across scattered tools.",
+          "examples": ["Databases", "CRUD", "Admin panels"]
+        },
+        {
+          "icon": "wrench",
+          "title": "Maintenance and improvements",
+          "desc": "If you already have a website or app, I can review it, fix issues and add new features without rebuilding what already works.",
+          "examples": ["Bug fixes", "New features", "Integrations"]
+        }
+      ]
+    },
+    "process": {
+      "kicker": "03 — How I work",
+      "heading": "A clear process, start to finish",
+      "lead": "You always know exactly where your project stands.",
+      "steps": [
+        {
+          "title": "Initial conversation",
+          "desc": "You tell me about your idea or problem. No jargon — I want to understand the business before the technology."
+        },
+        {
+          "title": "Proposal and scope",
+          "desc": "We define together what's going to be built, in what order, and what you actually need to launch."
+        },
+        {
+          "title": "Development",
+          "desc": "I build the solution with regular updates, so you see real progress, not just the final result."
+        },
+        {
+          "title": "Delivery and follow-up",
+          "desc": "I launch the project and stay available for adjustments, questions or the next phase."
+        }
+      ]
+    },
+    "portfolio": {
+      "kicker": "04 — Portfolio",
+      "heading": "Projects",
+      "lead": "A sample of what I've been working on. Each project includes real context: what the problem was, what I did and how I solved it."
+    },
+    "about": {
+      "kicker": "05 — About me",
+      "heading": "The person behind FerrerVersion",
+      "paragraphs": [
+        "I'm Jorge, a developer with a Higher Diploma in Multi-platform Application Development and a Technical Diploma in Microcomputer Systems and Networks. I started on the more technical side — building PCs, troubleshooting, installing systems — before specializing in programming, and that foundation still shapes how I work: understand how something works first, then build it properly.",
+        "During my professional internship I built a <strong>complete native Android application</strong> from scratch for a real business, with authentication, a database, an admin panel and several integrations — the kind of project that forces you to make real technical decisions, not just follow a tutorial.",
+        "Today, under FerrerVersion, I help businesses and projects turn an idea into something that works: with judgment, no shortcuts, and whatever technology the project actually needs — not whatever's trending."
+      ],
+      "timeline": [
+        { "period": "Higher Diploma", "title": "Multi-platform Application Development (DAM)", "place": "Progresa, Valencia" },
+        { "period": "Technical Diploma", "title": "Microcomputer Systems and Networks (SMR)", "place": "Complejo Educativo de Cheste" },
+        { "period": "Professional internship", "title": "Native Android development with Kotlin and Firebase", "place": "Lourdes Iniesta — Centro de Salud y Belleza, Valencia" }
+      ]
+    },
+    "capabilities": {
+      "kicker": "06 — Capabilities",
+      "heading": "What I work with",
+      "lead": "No percentages, no skill bars — these are the tools I use to build real software today.",
+      "groups": [
+        { "title": "Mobile development", "items": ["Kotlin", "Native Android", "Firebase", "Firestore"] },
+        { "title": "Web development", "items": ["HTML", "CSS", "JavaScript"] },
+        { "title": "Data and systems", "items": ["User authentication", "Databases", "Admin panels"] },
+        { "title": "Tools and workflow", "items": ["Git and GitHub", "Operating systems", "Networks and microcomputer systems"] }
+      ]
+    },
+    "ctaFinal": {
+      "headline": "Have an idea or a problem to solve?",
+      "sub": "Tell me about it. No commitment, no jargon — just a conversation to see how I can help.",
+      "cta": "Let's talk about your project"
+    },
+    "contact": {
+      "kicker": "07 — Contact",
+      "intro": "Let's start with a conversation.",
+      "sub": "Reach me through whichever channel you prefer. I usually reply quickly.",
+      "labels": { "email": "Email", "whatsapp": "WhatsApp", "github": "GitHub", "linkedin": "LinkedIn", "cv": "Resume" }
+    }
+  }
+}

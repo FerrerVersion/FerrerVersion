@@ -1,0 +1,68 @@
+/* ==========================================================================
+   FerrerVersion — Design tokens
+   "Foil & Precision": negro editorial + acentos de oro metálico.
+   ========================================================================== */
+
+:root {
+  /* Color */
+  --bg-void: #0a0908;
+  --bg-charcoal: #151311;
+  --bg-charcoal-2: #1c1916;
+  --gold: #c6a15b;
+  --gold-bright: #e8d9ad;
+  --gold-deep: #8a6e33;
+  --ink: #f3efe6;
+  --ink-muted: #a79e8e;
+  --ink-faint: #8f8676; /* mínimo 4.5:1 sobre --bg-void (WCAG AA) */
+  --hairline: rgba(198, 161, 91, 0.18);
+  --hairline-strong: rgba(198, 161, 91, 0.34);
+  --overlay-scrim: rgba(10, 9, 8, 0.72);
+
+  /* Tipografía */
+  --font-display: "Fraunces", "Iowan Old Style", "Georgia", serif;
+  --font-body: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", ui-monospace, monospace;
+
+  /* Escala tipográfica fluida */
+  --fs-kicker: clamp(0.7rem, 0.66rem + 0.2vw, 0.78rem);
+  --fs-body: clamp(1rem, 0.96rem + 0.15vw, 1.09rem);
+  --fs-lead: clamp(1.15rem, 1.05rem + 0.4vw, 1.4rem);
+  --fs-h3: clamp(1.35rem, 1.2rem + 0.7vw, 1.75rem);
+  --fs-h2: clamp(1.9rem, 1.5rem + 1.8vw, 2.9rem);
+  --fs-h1: clamp(2.6rem, 1.9rem + 3.2vw, 4.6rem);
+  --fs-display: clamp(3.2rem, 2.2rem + 4.8vw, 6.4rem);
+
+  /* Espaciado modular (rem) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+  --sp-48: 12rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: clamp(1.25rem, 4vw, 4rem);
+  --section-pad-y: clamp(4.5rem, 6vw + 1rem, 8rem);
+
+  /* Forma */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Movimiento */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 220ms;
+  --dur-base: 420ms;
+  --dur-slow: 900ms;
+
+  /* Capas: la navbar va por encima del panel móvil para que el botón
+     de cerrar (mismo toggle) siga visible y pulsable con el menú abierto. */
+  --z-overlay: 200;
+  --z-nav: 300;
+}
