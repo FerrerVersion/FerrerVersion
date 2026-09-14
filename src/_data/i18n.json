@@ -1,0 +1,88 @@
+{
+  "es": {
+    "htmlLang": "es",
+    "ogLocale": "es_ES",
+    "skipLink": "Ir al contenido principal",
+    "nav": {
+      "inicio": "Inicio",
+      "servicios": "Servicios",
+      "proyectos": "Proyectos",
+      "sobreMi": "Sobre mí",
+      "contacto": "Contacto"
+    },
+    "navCta": "Hablemos",
+    "menuAbrir": "Abrir menú",
+    "menuCerrar": "Cerrar menú",
+    "footer": {
+      "desc": "Desarrollo web y aplicaciones a medida para quien necesita convertir una idea en un producto real.",
+      "navegacion": "Navegación",
+      "conecta": "Conecta",
+      "idioma": "Idioma",
+      "copyright": "Todos los derechos reservados."
+    },
+    "langSwitchLabel": "Cambiar idioma",
+    "verProyecto": "Ver caso de estudio",
+    "volverProyectos": "Volver a proyectos",
+    "irAlDetalle": "Ver todos los proyectos",
+    "case": {
+      "problema": "El problema",
+      "miPapel": "Mi papel",
+      "solucion": "Cómo lo resolví",
+      "plataforma": "Plataforma",
+      "anio": "Año",
+      "tecnologias": "Tecnologías",
+      "verDemo": "Ver demo",
+      "verCodigo": "Ver código",
+      "visitar": "Visitar enlace",
+      "verMemoria": "Descargar memoria (PDF)",
+      "enlacePendiente": "Enlace pendiente",
+      "capturasPendientes": "Capturas pendientes",
+      "arquitectura": "Arquitectura",
+      "aprendizajes": "Qué aprendí",
+      "galeria": "Capturas"
+    }
+  },
+  "en": {
+    "htmlLang": "en",
+    "ogLocale": "en_US",
+    "skipLink": "Skip to main content",
+    "nav": {
+      "inicio": "Home",
+      "servicios": "Services",
+      "proyectos": "Projects",
+      "sobreMi": "About",
+      "contacto": "Contact"
+    },
+    "navCta": "Let's talk",
+    "menuAbrir": "Open menu",
+    "menuCerrar": "Close menu",
+    "footer": {
+      "desc": "Web and custom application development for anyone who needs to turn an idea into a real product.",
+      "navegacion": "Navigation",
+      "conecta": "Connect",
+      "idioma": "Language",
+      "copyright": "All rights reserved."
+    },
+    "langSwitchLabel": "Switch language",
+    "verProyecto": "View case study",
+    "volverProyectos": "Back to projects",
+    "irAlDetalle": "View all projects",
+    "case": {
+      "problema": "The problem",
+      "miPapel": "My role",
+      "solucion": "How I solved it",
+      "plataforma": "Platform",
+      "anio": "Year",
+      "tecnologias": "Technologies",
+      "verDemo": "View demo",
+      "verCodigo": "View code",
+      "visitar": "Visit link",
+      "verMemoria": "Download report (PDF)",
+      "enlacePendiente": "Link pending",
+      "capturasPendientes": "Screenshots pending",
+      "arquitectura": "Architecture",
+      "aprendizajes": "What I learned",
+      "galeria": "Screenshots"
+    }
+  }
+}

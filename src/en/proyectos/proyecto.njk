@@ -1,0 +1,15 @@
+---
+pagination:
+  data: projectsPublished
+  size: 1
+  alias: project
+permalink: "/en/proyectos/{{ project.slug }}/"
+layout: layouts/base.njk
+lang: en
+eleventyComputed:
+  esUrl: "/proyectos/{{ project.slug }}/"
+  enUrl: "/en/proyectos/{{ project.slug }}/"
+  pageTitle: "{{ project.en.nombre }} — FerrerVersion"
+  pageDescription: "{{ project.en.resumen }}"
+---
+{% include "partials/case-body.njk" %}

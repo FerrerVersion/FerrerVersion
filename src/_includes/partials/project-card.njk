@@ -1,0 +1,35 @@
+{% from "partials/icons.njk" import icon %}
+
+{% macro card(project, index, lang, t) %}
+{% set c = project[lang] %}
+{% set detailUrl = ("/proyectos/" if lang == "es" else "/en/proyectos/") + project.slug + "/" %}
+{% if project.isPlaceholder %}
+<article class="project-card">
+  <span class="project-card__index">{{ index | pad2 }}</span>
+  <div class="project-card__media">
+    <span class="project-card__placeholder">{{ "Próximamente" if lang == "es" else "Coming soon" }}</span>
+  </div>
+  <h3 class="project-card__title">{{ c.nombre }}</h3>
+  <p class="project-card__summary">{{ c.resumen }}</p>
+</article>
+{% else %}
+<a class="project-card" href="{{ detailUrl }}">
+  <span class="project-card__index">{{ index | pad2 }}</span>
+  <div class="project-card__media">
+    {% if project.images and project.images.length > 0 %}
+      <img src="{{ project.images[0].src }}" alt="{{ project.images[0].caption[lang] or c.nombre }}" loading="lazy" />
+    {% else %}
+      <span class="project-card__placeholder">{{ "Capturas pendientes" if lang == "es" else "Screenshots pending" }}</span>
+    {% endif %}
+  </div>
+  <h3 class="project-card__title">{{ c.nombre }}</h3>
+  <p class="project-card__summary">{{ c.resumen }}</p>
+  <div class="project-card__tags">
+    {% for item in project.tech %}
+    <span class="tag">{{ item }}</span>
+    {% endfor %}
+  </div>
+  <span class="project-card__cta">{{ t.verProyecto }} {{ icon("arrow-right") }}</span>
+</a>
+{% endif %}
+{% endmacro %}

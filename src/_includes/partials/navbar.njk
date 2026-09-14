@@ -1,0 +1,59 @@
+{% set homePath = "/" if lang == "es" else "/en/" %}
+<header class="navbar" data-navbar>
+  <div class="container navbar__row">
+    <a class="navbar__brand" href="{{ homePath }}" aria-label="{{ site.name }} — {{ t.nav.inicio }}">
+      <span class="navbar__mark">
+        <img src="/assets/img/fv-mark-96.png" alt="" width="96" height="96" loading="eager" />
+      </span>
+      <span class="navbar__wordmark">{{ site.name }}</span>
+    </a>
+
+    <nav class="navbar__links" aria-label="{{ t.nav.inicio }}">
+      <a class="navbar__link" href="{{ homePath }}#servicios">{{ t.nav.servicios }}</a>
+      <a class="navbar__link" href="{{ homePath }}#proyectos">{{ t.nav.proyectos }}</a>
+      <a class="navbar__link" href="{{ homePath }}#sobre-mi">{{ t.nav.sobreMi }}</a>
+      <a class="navbar__link" href="{{ homePath }}#contacto">{{ t.nav.contacto }}</a>
+    </nav>
+
+    <div class="navbar__bar-actions navbar__actions">
+      <div class="lang-switch" aria-label="{{ t.langSwitchLabel }}">
+        <a href="{{ esUrl }}" aria-current="{{ 'true' if lang == 'es' else 'false' }}" hreflang="es">ES</a>
+        <span aria-hidden="true">/</span>
+        <a href="{{ enUrl }}" aria-current="{{ 'true' if lang == 'en' else 'false' }}" hreflang="en">EN</a>
+      </div>
+      <a class="btn btn-primary" href="{{ homePath }}#contacto">{{ t.navCta }}</a>
+    </div>
+
+    <button
+      class="navbar__toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-toggle
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="visually-hidden">{{ t.menuAbrir }}</span>
+    </button>
+  </div>
+</header>
+
+{# Fuera del <header>: .navbar tiene backdrop-filter, que convertiría este panel
+   fixed en un elemento posicionado relativo al header (68px) en vez de al viewport. #}
+<div class="navbar__mobile-panel" id="mobile-menu" data-mobile-panel>
+  <nav class="navbar__links" style="flex-direction: column; align-items: flex-start; gap: var(--sp-4);" aria-label="{{ t.nav.inicio }}">
+    <a class="navbar__link" href="{{ homePath }}#servicios" data-menu-link>{{ t.nav.servicios }}</a>
+    <a class="navbar__link" href="{{ homePath }}#proyectos" data-menu-link>{{ t.nav.proyectos }}</a>
+    <a class="navbar__link" href="{{ homePath }}#sobre-mi" data-menu-link>{{ t.nav.sobreMi }}</a>
+    <a class="navbar__link" href="{{ homePath }}#contacto" data-menu-link>{{ t.nav.contacto }}</a>
+  </nav>
+  <div class="navbar__actions">
+    <a class="btn btn-primary" href="{{ homePath }}#contacto" data-menu-link>{{ t.navCta }}</a>
+    <div class="lang-switch" aria-label="{{ t.langSwitchLabel }}">
+      <a href="{{ esUrl }}" aria-current="{{ 'true' if lang == 'es' else 'false' }}" hreflang="es">ES</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ enUrl }}" aria-current="{{ 'true' if lang == 'en' else 'false' }}" hreflang="en">EN</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,229 @@
+{% from "partials/icons.njk" import icon %}
+{% from "partials/project-card.njk" import card %}
+{% set h = home[lang] %}
+
+<section class="hero" data-hero>
+  <svg class="hero__grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <filter id="fv-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"></feTurbulence>
+      <feColorMatrix type="saturate" values="0"></feColorMatrix>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#fv-grain)"></rect>
+  </svg>
+  <div class="container hero__inner">
+    <p class="kicker">{{ h.hero.kicker }}</p>
+    <h1 class="hero__headline">
+      {% for line in h.hero.headlineLines %}
+      <span class="reveal-line"><span>{{ line }}</span></span>
+      {% endfor %}
+    </h1>
+
+    <div class="hero__rule-wrap" aria-hidden="true">
+      <svg viewBox="0 0 420 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 14 C 110 2, 310 24, 418 10" stroke="var(--gold)" stroke-width="1.5" />
+      </svg>
+    </div>
+
+    <p class="hero__lede">{{ h.hero.lede }}</p>
+
+    <div class="hero__actions">
+      <a class="btn btn-primary" href="{{ '/' if lang == 'es' else '/en/' }}#contacto">
+        {{ h.hero.ctaPrimary }} {{ icon("arrow-right") }}
+      </a>
+      <a class="btn btn-secondary" href="{{ '/' if lang == 'es' else '/en/' }}#proyectos">
+        {{ h.hero.ctaSecondary }}
+      </a>
+    </div>
+
+    <dl class="hero__meta">
+      {% for item in h.hero.meta %}
+      <div class="hero__meta-item">
+        <dt>{{ item.label }}</dt>
+        <dd>{{ item.value }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="propuesta" data-reveal>
+  <div class="container value-prop__grid">
+    <div>
+      <p class="kicker">{{ h.valueProp.kicker }}</p>
+      <p class="value-prop__lead">{{ h.valueProp.leadBefore }}<em>{{ h.valueProp.leadEm }}</em>{{ h.valueProp.leadAfter }}</p>
+    </div>
+    <div class="value-prop__body">
+      {% for p in h.valueProp.paragraphs %}
+      <p>{{ p }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="servicios" data-reveal>
+  <div class="container">
+    <div class="section__head">
+      <p class="kicker">{{ h.services.kicker }}</p>
+      <h2>{{ h.services.heading }}</h2>
+      <p>{{ h.services.lead }}</p>
+    </div>
+    <div class="services__list">
+      {% for s in h.services.items %}
+      <div class="service-row">
+        <div class="service-row__head">
+          <span class="icon-badge">{{ icon(s.icon) }}</span>
+          <h3 class="service-row__title">{{ s.title }}</h3>
+        </div>
+        <div>
+          <p class="service-row__desc">{{ s.desc }}</p>
+          <div class="service-row__examples">
+            {% for ex in s.examples %}
+            <span class="tag">{{ ex }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="proceso" data-reveal>
+  <div class="container">
+    <div class="section__head">
+      <p class="kicker">{{ h.process.kicker }}</p>
+      <h2>{{ h.process.heading }}</h2>
+      <p>{{ h.process.lead }}</p>
+    </div>
+    <ol class="process__list">
+      {% for step in h.process.steps %}
+      <li class="process-step">
+        <h3 class="process-step__title">{{ step.title }}</h3>
+        <p class="process-step__desc">{{ step.desc }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section--alt" id="proyectos" data-reveal>
+  <div class="container">
+    <div class="section__head">
+      <p class="kicker">{{ h.portfolio.kicker }}</p>
+      <h2>{{ h.portfolio.heading }}</h2>
+      <p>{{ h.portfolio.lead }}</p>
+    </div>
+    <div class="portfolio__list">
+      {% for project in projects %}
+      {{ card(project, loop.index, lang, t) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sobre-mi" data-reveal>
+  <div class="container about__grid">
+    <div>
+      <p class="kicker">{{ h.about.kicker }}</p>
+      <h2>{{ h.about.heading }}</h2>
+      <div class="timeline" style="margin-top: var(--sp-12);">
+        {% for item in h.about.timeline %}
+        <div class="timeline-item">
+          <p class="timeline-item__period">{{ item.period }}</p>
+          <p class="timeline-item__title">{{ item.title }}</p>
+          <p class="timeline-item__place">{{ item.place }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="about__body">
+      {% for p in h.about.paragraphs %}
+      <p>{{ p | safe }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="capacidades" data-reveal>
+  <div class="container">
+    <div class="section__head">
+      <p class="kicker">{{ h.capabilities.kicker }}</p>
+      <h2>{{ h.capabilities.heading }}</h2>
+      <p>{{ h.capabilities.lead }}</p>
+    </div>
+    <div class="capabilities__groups">
+      {% for group in h.capabilities.groups %}
+      <div class="capability-group">
+        <p class="capability-group__title">{{ group.title }}</p>
+        <div class="capability-group__items">
+          {% for item in group.items %}
+          <span class="capability-pill">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section cta-final" data-reveal>
+  <div class="container">
+    <h2 class="cta-final__headline">{{ h.ctaFinal.headline }}</h2>
+    <p class="cta-final__sub">{{ h.ctaFinal.sub }}</p>
+    <div class="cta-final__actions">
+      <a class="btn btn-primary" href="{{ '/' if lang == 'es' else '/en/' }}#contacto">
+        {{ h.ctaFinal.cta }} {{ icon("arrow-right") }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="contacto" data-reveal>
+  <div class="container contact__grid">
+    <div>
+      <p class="kicker">{{ h.contact.kicker }}</p>
+      <p class="contact__intro">{{ h.contact.intro }}</p>
+      <p style="color: var(--ink-muted); margin-top: var(--sp-4); max-width: 32ch;">{{ h.contact.sub }}</p>
+    </div>
+    <ul class="contact-list">
+      <li class="contact-list__item">
+        <span class="contact-list__label">{{ h.contact.labels.email }}</span>
+        {% if site.contact.emailHref %}
+        <a class="contact-list__value link-underline" href="{{ site.contact.emailHref }}">{{ site.contact.email }}</a>
+        {% else %}
+        <span class="contact-list__value placeholder-note">{{ site.contact.email }}</span>
+        {% endif %}
+      </li>
+      <li class="contact-list__item">
+        <span class="contact-list__label">{{ h.contact.labels.whatsapp }}</span>
+        {% if site.contact.whatsappHref %}
+        <a class="contact-list__value link-underline" href="{{ site.contact.whatsappHref }}">{{ site.contact.whatsapp }}</a>
+        {% else %}
+        <span class="contact-list__value placeholder-note">{{ site.contact.whatsapp }}</span>
+        {% endif %}
+      </li>
+      <li class="contact-list__item">
+        <span class="contact-list__label">{{ h.contact.labels.github }}</span>
+        {% if site.contact.githubHref %}
+        <a class="contact-list__value link-underline" href="{{ site.contact.githubHref }}">{{ site.contact.github }}</a>
+        {% else %}
+        <span class="contact-list__value placeholder-note">{{ site.contact.github }}</span>
+        {% endif %}
+      </li>
+      <li class="contact-list__item">
+        <span class="contact-list__label">{{ h.contact.labels.linkedin }}</span>
+        {% if site.contact.linkedinHref %}
+        <a class="contact-list__value link-underline" href="{{ site.contact.linkedinHref }}">{{ site.contact.linkedin }}</a>
+        {% else %}
+        <span class="contact-list__value placeholder-note">{{ site.contact.linkedin }}</span>
+        {% endif %}
+      </li>
+      {% if site.cv %}
+      <li class="contact-list__item">
+        <span class="contact-list__label">{{ h.contact.labels.cv }}</span>
+        <a class="contact-list__value link-underline" href="{{ site.cv }}">{{ "Descargar en PDF" if lang == "es" else "Download as PDF" }}</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</section>

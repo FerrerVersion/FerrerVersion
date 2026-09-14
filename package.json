@@ -1,0 +1,14 @@
+{
+  "name": "ferrerversion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio profesional y web comercial de FerrerVersion",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ t.htmlLang }}">
+  <head>
+    {% include "partials/seo.njk" %}
+    <noscript>
+      <style>
+        [data-reveal],
+        .hero__lede,
+        .hero__actions,
+        .reveal-line span {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .hero__rule-wrap svg path {
+          stroke-dashoffset: 0 !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{{ t.skipLink }}</a>
+    {% include "partials/navbar.njk" %}
+    <main id="main">
+      {{ content | safe }}
+    </main>
+    {% include "partials/footer.njk" %}
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>

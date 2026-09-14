@@ -1,0 +1,35 @@
+{
+  "slug": "app-lourdes-iniesta",
+  "order": 2,
+  "isPlaceholder": false,
+  "year": "2026",
+  "platform": {
+    "es": "Android nativo · iOS nativo · Panel web",
+    "en": "Native Android · Native iOS · Web panel"
+  },
+  "tech": ["Kotlin", "Swift", "SwiftUI", "Firebase", "Firestore", "Firebase Auth", "React", "WhatsApp Business API"],
+  "links": {
+    "demo": null,
+    "github": null,
+    "external": null
+  },
+  "images": [
+    { "src": "/assets/img/proyectos/lourdes/login-ios.jpg", "caption": { "es": "Pantalla de acceso — versión iOS (SwiftUI)", "en": "Sign-in screen — iOS version (SwiftUI)" } }
+  ],
+  "es": {
+    "nombre": "App para Lourdes Iniesta",
+    "resumen": "App nativa para Android e iOS, con panel de administración web, construida durante mis prácticas para Lourdes Iniesta, entrenadora personal y creadora de contenido fitness: catálogo de productos, reserva de citas y videoclases de pago, todo conectado a Firebase.",
+    "problema": "Lourdes gestionaba sus citas, su catálogo de productos y el acceso a sus videoclases de forma manual, a través de WhatsApp e Instagram, sin ningún sistema centralizado ni una app propia para sus clientas.",
+    "miPapel": "Prácticas de Grado Superior (DAM), siete semanas: desde el análisis inicial de necesidades y la evaluación de tecnologías (nativo vs. Flutter vs. React Native vs. PWA) hasta el desarrollo completo de la app Android, la versión nativa para iOS y el panel de administración web.",
+    "solucion": "Dos apps nativas —Android en Kotlin e iOS en Swift/SwiftUI— conectadas a un backend compartido en Firebase (Auth, Firestore, Storage): catálogo de productos, reserva de citas con selector de fecha y hora, videoclases con acceso condicionado a la compra (si no está comprada, redirige a WhatsApp) y perfil de usuario. Un panel de administración en React permite a Lourdes gestionar todo el contenido sin depender de nadie.",
+    "arquitectura": "Antes de escribir código se evaluaron cuatro opciones —Android nativo, Flutter, React Native y PWA— y se optó por nativo con Firebase por el rendimiento, el control total de la UI y que la mayoría de las clientas de Lourdes usan Android; más adelante se construyó también la versión nativa para iOS. Android, iOS y el panel web comparten el mismo backend en Firebase, sin necesidad de una API intermedia."
+  },
+  "en": {
+    "nombre": "App for Lourdes Iniesta",
+    "resumen": "A native Android and iOS app, with a web admin panel, built during my internship for Lourdes Iniesta, a personal trainer and fitness content creator: product catalog, appointment booking and paid video classes, all connected to Firebase.",
+    "problema": "Lourdes managed her appointments, product catalog and access to her video classes manually, through WhatsApp and Instagram, with no centralized system and no app of her own for her clients.",
+    "miPapel": "A seven-week Higher Diploma (DAM) internship: from the initial needs analysis and technology evaluation (native vs. Flutter vs. React Native vs. PWA) to the full development of the Android app, the native iOS version and the web admin panel.",
+    "solucion": "Two native apps — Android in Kotlin and iOS in Swift/SwiftUI — connected to a shared Firebase backend (Auth, Firestore, Storage): a product catalog, appointment booking with a date/time picker, video classes with purchase-gated access (redirecting to WhatsApp if not purchased) and a user profile. A React admin panel lets Lourdes manage all the content independently.",
+    "arquitectura": "Before writing any code, four options were evaluated — native Android, Flutter, React Native and a PWA — and native with Firebase was chosen for its performance, full UI control, and because most of Lourdes's clients use Android; a native iOS version was built later on. Android, iOS and the web panel all share the same Firebase backend, with no need for an intermediate API."
+  }
+}

@@ -1,0 +1,46 @@
+{% set homePath = "/" if lang == "es" else "/en/" %}
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">
+          <span class="navbar__mark">
+            <img src="/assets/img/fv-mark-96.png" alt="" width="96" height="96" loading="lazy" />
+          </span>
+          <span class="footer__brand-name">{{ site.name }}</span>
+        </div>
+        <p class="footer__desc">{{ t.footer.desc }}</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__col-title">{{ t.footer.navegacion }}</p>
+          <a href="{{ homePath }}#servicios">{{ t.nav.servicios }}</a>
+          <a href="{{ homePath }}#proyectos">{{ t.nav.proyectos }}</a>
+          <a href="{{ homePath }}#sobre-mi">{{ t.nav.sobreMi }}</a>
+          <a href="{{ homePath }}#contacto">{{ t.nav.contacto }}</a>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">{{ t.footer.conecta }}</p>
+          <a href="{{ site.contact.emailHref or '#contacto' }}">Email</a>
+          <a href="{{ site.contact.githubHref or '#contacto' }}">GitHub</a>
+          <a href="{{ site.contact.linkedinHref or '#contacto' }}">LinkedIn</a>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">{{ t.footer.idioma }}</p>
+          <a href="{{ esUrl }}" hreflang="es">Español</a>
+          <a href="{{ enUrl }}" hreflang="en">English</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-row">
+        <span>&copy; {{ currentYear }} {{ site.name }}. {{ t.footer.copyright }}</span>
+        <span>{{ site.author }}</span>
+      </div>
+    </div>
+  </div>
+</footer>
