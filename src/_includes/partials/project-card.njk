@@ -2,7 +2,7 @@
 
 {% macro card(project, index, lang, t) %}
 {% set c = project[lang] %}
-{% set detailUrl = ("/proyectos/" if lang == "es" else "/en/proyectos/") + project.slug + "/" %}
+{% set detailUrl = (("/proyectos/" if lang == "es" else "/en/proyectos/") + project.slug + "/") | url %}
 {% if project.isPlaceholder %}
 <article class="project-card">
   <span class="project-card__index">{{ index | pad2 }}</span>
@@ -17,7 +17,7 @@
   <span class="project-card__index">{{ index | pad2 }}</span>
   <div class="project-card__media">
     {% if project.images and project.images.length > 0 %}
-      <img src="{{ project.images[0].src }}" alt="{{ project.images[0].caption[lang] or c.nombre }}" loading="lazy" />
+      <img src="{{ project.images[0].src | url }}" alt="{{ project.images[0].caption[lang] or c.nombre }}" loading="lazy" />
     {% else %}
       <span class="project-card__placeholder">{{ "Capturas pendientes" if lang == "es" else "Screenshots pending" }}</span>
     {% endif %}

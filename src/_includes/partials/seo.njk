@@ -2,37 +2,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}" />
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-<link rel="alternate" hreflang="es" href="{{ site.url }}{{ esUrl }}" />
-<link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}" />
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ esUrl }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url | url }}" />
+<link rel="alternate" hreflang="es" href="{{ site.url }}{{ esUrl | url }}" />
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl | url }}" />
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ esUrl | url }}" />
 
 <meta name="theme-color" content="{{ site.themeColor }}" />
-<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png" />
-<link rel="icon" href="/assets/img/favicon-16.png" sizes="16x16" type="image/png" />
-<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+<link rel="icon" href="{{ '/assets/img/favicon-32.png' | url }}" sizes="32x32" type="image/png" />
+<link rel="icon" href="{{ '/assets/img/favicon-16.png' | url }}" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ pageTitle }}" />
 <meta property="og:description" content="{{ pageDescription }}" />
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url | url }}" />
 <meta property="og:locale" content="{{ t.ogLocale }}" />
-<meta property="og:image" content="{{ site.url }}{{ ogImage or '/assets/img/og-default.jpg' }}" />
+<meta property="og:image" content="{{ site.url }}{{ (ogImage or '/assets/img/og-default.jpg') | url }}" />
 <meta property="og:site_name" content="{{ site.name }}" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ pageTitle }}" />
 <meta name="twitter:description" content="{{ pageDescription }}" />
-<meta name="twitter:image" content="{{ site.url }}{{ ogImage or '/assets/img/og-default.jpg' }}" />
+<meta name="twitter:image" content="{{ site.url }}{{ (ogImage or '/assets/img/og-default.jpg') | url }}" />
 
-<link rel="preload" href="/assets/fonts/fraunces-500-latin.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/fonts/plus-jakarta-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="{{ '/assets/fonts/fraunces-500-latin.woff2' | url }}" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="{{ '/assets/fonts/plus-jakarta-sans-400-latin.woff2' | url }}" as="font" type="font/woff2" crossorigin />
 
-<link rel="stylesheet" href="/assets/css/fonts.css" />
-<link rel="stylesheet" href="/assets/css/tokens.css" />
-<link rel="stylesheet" href="/assets/css/base.css" />
-<link rel="stylesheet" href="/assets/css/components.css" />
-<link rel="stylesheet" href="/assets/css/sections.css" />
+<link rel="stylesheet" href="{{ '/assets/css/fonts.css' | url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/base.css' | url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/components.css' | url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/sections.css' | url }}" />
 
 {% if includeSchema %}
 <script type="application/ld+json">
@@ -44,10 +44,10 @@
     "@type": "Person",
     "name": "{{ site.author }}"
   },
-  "url": "{{ site.url }}{{ page.url }}",
+  "url": "{{ site.url }}{{ page.url | url }}",
   "description": "{{ pageDescription }}",
   "areaServed": "ES",
-  "image": "{{ site.url }}/assets/img/og-default.jpg"
+  "image": "{{ site.url }}{{ '/assets/img/og-default.jpg' | url }}"
 }
 </script>
 {% endif %}

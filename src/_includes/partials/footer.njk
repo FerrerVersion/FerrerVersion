@@ -1,11 +1,11 @@
-{% set homePath = "/" if lang == "es" else "/en/" %}
+{% set homePath = ("/" if lang == "es" else "/en/") | url %}
 <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <div>
         <div class="footer__brand">
           <span class="navbar__mark">
-            <img src="/assets/img/fv-mark-96.png" alt="" width="96" height="96" loading="lazy" />
+            <img src="{{ '/assets/img/fv-mark-96.png' | url }}" alt="" width="96" height="96" loading="lazy" />
           </span>
           <span class="footer__brand-name">{{ site.name }}</span>
         </div>
@@ -30,8 +30,8 @@
 
         <div class="footer__col">
           <p class="footer__col-title">{{ t.footer.idioma }}</p>
-          <a href="{{ esUrl }}" hreflang="es">Español</a>
-          <a href="{{ enUrl }}" hreflang="en">English</a>
+          <a href="{{ esUrl | url }}" hreflang="es">Español</a>
+          <a href="{{ enUrl | url }}" hreflang="en">English</a>
         </div>
       </div>
     </div>

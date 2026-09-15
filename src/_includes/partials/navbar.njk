@@ -1,9 +1,9 @@
-{% set homePath = "/" if lang == "es" else "/en/" %}
+{% set homePath = ("/" if lang == "es" else "/en/") | url %}
 <header class="navbar" data-navbar>
   <div class="container navbar__row">
     <a class="navbar__brand" href="{{ homePath }}" aria-label="{{ site.name }} — {{ t.nav.inicio }}">
       <span class="navbar__mark">
-        <img src="/assets/img/fv-mark-96.png" alt="" width="96" height="96" loading="eager" />
+        <img src="{{ '/assets/img/fv-mark-96.png' | url }}" alt="" width="96" height="96" loading="eager" />
       </span>
       <span class="navbar__wordmark">{{ site.name }}</span>
     </a>
@@ -17,9 +17,9 @@
 
     <div class="navbar__bar-actions navbar__actions">
       <div class="lang-switch" aria-label="{{ t.langSwitchLabel }}">
-        <a href="{{ esUrl }}" aria-current="{{ 'true' if lang == 'es' else 'false' }}" hreflang="es">ES</a>
+        <a href="{{ esUrl | url }}" aria-current="{{ 'true' if lang == 'es' else 'false' }}" hreflang="es">ES</a>
         <span aria-hidden="true">/</span>
-        <a href="{{ enUrl }}" aria-current="{{ 'true' if lang == 'en' else 'false' }}" hreflang="en">EN</a>
+        <a href="{{ enUrl | url }}" aria-current="{{ 'true' if lang == 'en' else 'false' }}" hreflang="en">EN</a>
       </div>
       <a class="btn btn-primary" href="{{ homePath }}#contacto">{{ t.navCta }}</a>
     </div>
@@ -51,9 +51,9 @@
   <div class="navbar__actions">
     <a class="btn btn-primary" href="{{ homePath }}#contacto" data-menu-link>{{ t.navCta }}</a>
     <div class="lang-switch" aria-label="{{ t.langSwitchLabel }}">
-      <a href="{{ esUrl }}" aria-current="{{ 'true' if lang == 'es' else 'false' }}" hreflang="es">ES</a>
+      <a href="{{ esUrl | url }}" aria-current="{{ 'true' if lang == 'es' else 'false' }}" hreflang="es">ES</a>
       <span aria-hidden="true">/</span>
-      <a href="{{ enUrl }}" aria-current="{{ 'true' if lang == 'en' else 'false' }}" hreflang="en">EN</a>
+      <a href="{{ enUrl | url }}" aria-current="{{ 'true' if lang == 'en' else 'false' }}" hreflang="en">EN</a>
     </div>
   </div>
 </div>
