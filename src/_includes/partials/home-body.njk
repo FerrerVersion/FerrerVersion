@@ -27,10 +27,10 @@
     <p class="hero__lede">{{ h.hero.lede }}</p>
 
     <div class="hero__actions">
-      <a class="btn btn-primary" href="{{ '/' if lang == 'es' else '/en/' }}#contacto">
+      <a class="btn btn-primary" href="{{ ('/' if lang == 'es' else '/en/') | url }}#contacto">
         {{ h.hero.ctaPrimary }} {{ icon("arrow-right") }}
       </a>
-      <a class="btn btn-secondary" href="{{ '/' if lang == 'es' else '/en/' }}#proyectos">
+      <a class="btn btn-secondary" href="{{ ('/' if lang == 'es' else '/en/') | url }}#proyectos">
         {{ h.hero.ctaSecondary }}
       </a>
     </div>
@@ -171,7 +171,7 @@
     <h2 class="cta-final__headline">{{ h.ctaFinal.headline }}</h2>
     <p class="cta-final__sub">{{ h.ctaFinal.sub }}</p>
     <div class="cta-final__actions">
-      <a class="btn btn-primary" href="{{ '/' if lang == 'es' else '/en/' }}#contacto">
+      <a class="btn btn-primary" href="{{ ('/' if lang == 'es' else '/en/') | url }}#contacto">
         {{ h.ctaFinal.cta }} {{ icon("arrow-right") }}
       </a>
     </div>
@@ -221,7 +221,7 @@
       {% if site.cv %}
       <li class="contact-list__item">
         <span class="contact-list__label">{{ h.contact.labels.cv }}</span>
-        <a class="contact-list__value link-underline" href="{{ site.cv }}">{{ "Descargar en PDF" if lang == "es" else "Download as PDF" }}</a>
+        <a class="contact-list__value link-underline" href="{{ site.cv | url }}">{{ "Descargar en PDF" if lang == "es" else "Download as PDF" }}</a>
       </li>
       {% endif %}
     </ul>

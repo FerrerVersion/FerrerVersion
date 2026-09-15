@@ -1,6 +1,6 @@
 {% from "partials/icons.njk" import icon %}
 {% set c = project[lang] %}
-{% set homePath = "/" if lang == "es" else "/en/" %}
+{% set homePath = ("/" if lang == "es" else "/en/") | url %}
 
 <article class="case-hero container">
   <a class="case-hero__back link-underline" href="{{ homePath }}#proyectos">
@@ -39,7 +39,7 @@
     <div class="case-carousel__track" data-carousel-track>
       {% for image in project.images %}
       <figure class="case-carousel__slide" data-carousel-slide>
-        <img src="{{ image.src }}" alt="{{ image.caption[lang] or c.nombre }}" loading="{{ 'eager' if loop.first else 'lazy' }}" />
+        <img src="{{ image.src | url }}" alt="{{ image.caption[lang] or c.nombre }}" loading="{{ 'eager' if loop.first else 'lazy' }}" />
         {% if image.caption[lang] %}<figcaption>{{ image.caption[lang] }}</figcaption>{% endif %}
       </figure>
       {% endfor %}
@@ -90,7 +90,7 @@
     <a class="btn btn-secondary" href="{{ project.links.external }}">{{ t.case.visitar }} {{ icon("arrow-up-right") }}</a>
     {% endif %}
     {% if project.links.memoria %}
-    <a class="btn btn-secondary" href="{{ project.links.memoria }}">{{ t.case.verMemoria }} {{ icon("arrow-up-right") }}</a>
+    <a class="btn btn-secondary" href="{{ project.links.memoria | url }}">{{ t.case.verMemoria }} {{ icon("arrow-up-right") }}</a>
     {% endif %}
     {% if not project.links.demo and not project.links.github and not project.links.external and not project.links.memoria %}
     <span class="placeholder-note">{{ t.case.enlacePendiente }}</span>
