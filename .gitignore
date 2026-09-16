@@ -3,3 +3,7 @@ _site/
 .DS_Store
 .cache/
 *.log
+
+# Proyectos fuente usados como referencia para el portfolio (código y
+# capturas se extraen de aquí a mano; no forma parte del sitio en sí).
+WebsCreadas/

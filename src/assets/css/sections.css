@@ -503,7 +503,9 @@
   pointer-events: none;
 }
 
-.case-carousel__arrow {
+/* Flechas y puntos: compartidos por el carrusel de capturas del caso de
+   estudio y por los carruseles de portfolio (aplicaciones / webs). */
+.carousel__arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -519,32 +521,33 @@
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   transition: border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+  z-index: 2;
 }
 
-.case-carousel__arrow:hover,
-.case-carousel__arrow:focus-visible {
+.carousel__arrow:hover,
+.carousel__arrow:focus-visible {
   border-color: var(--gold);
   color: var(--gold);
 }
 
-.case-carousel__arrow svg {
+.carousel__arrow svg {
   width: 18px;
   height: 18px;
 }
 
-.case-carousel__arrow--prev {
+.carousel__arrow--prev {
   left: var(--sp-4);
 }
 
-.case-carousel__arrow--prev svg {
+.carousel__arrow--prev svg {
   transform: rotate(180deg);
 }
 
-.case-carousel__arrow--next {
+.carousel__arrow--next {
   right: var(--sp-4);
 }
 
-.case-carousel__dots {
+.carousel__dots {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,7 +555,7 @@
   margin-top: var(--sp-6);
 }
 
-.case-carousel__dot {
+.carousel__dot {
   width: 8px;
   height: 8px;
   padding: 0;
@@ -561,7 +564,7 @@
   transition: background var(--dur-fast) var(--ease-out), width var(--dur-fast) var(--ease-out);
 }
 
-.case-carousel__dot.is-active {
+.carousel__dot.is-active {
   width: 22px;
   background: var(--gold);
 }
@@ -569,6 +572,63 @@
 @media (min-width: 700px) {
   .case-carousel__slide {
     padding: var(--sp-16);
+  }
+}
+
+/* ---- Carrusel de portfolio (tarjetas de proyecto) ---- */
+.portfolio-group + .portfolio-group {
+  margin-top: var(--sp-24);
+}
+
+.portfolio-group__title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: var(--sp-6);
+}
+
+.portfolio-carousel {
+  position: relative;
+}
+
+.portfolio-carousel__track {
+  display: flex;
+  gap: var(--sp-6);
+  overflow-x: auto;
+  overflow-anchor: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: var(--sp-1);
+}
+
+.portfolio-carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio-carousel__slide {
+  flex: 0 0 85%;
+  scroll-snap-align: start;
+}
+
+.portfolio-carousel__slide .project-card {
+  border-top: none;
+  padding-block: 0;
+  height: 100%;
+}
+
+@media (min-width: 640px) {
+  .portfolio-carousel__slide {
+    flex-basis: 58%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .portfolio-carousel__slide {
+    flex-basis: 42%;
   }
 }
 

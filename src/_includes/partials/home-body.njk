@@ -113,11 +113,61 @@
       <h2>{{ h.portfolio.heading }}</h2>
       <p>{{ h.portfolio.lead }}</p>
     </div>
-    <div class="portfolio__list">
-      {% for project in projects %}
-      {{ card(project, loop.index, lang, t) }}
-      {% endfor %}
+
+    {% set appProjects = projects | whereCategory("app") %}
+    {% set webProjects = projects | whereCategory("web") %}
+
+    {% if appProjects.length > 0 %}
+    <div class="portfolio-group">
+      <p class="portfolio-group__title">{{ h.portfolio.appsLabel }}</p>
+      <div class="portfolio-carousel" data-carousel>
+        <div class="portfolio-carousel__track" data-carousel-track>
+          {% for project in appProjects %}
+          <div class="portfolio-carousel__slide" data-carousel-slide>
+            {{ card(project, loop.index, lang, t) }}
+          </div>
+          {% endfor %}
+        </div>
+        {% if appProjects.length > 1 %}
+        <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="{{ 'Anterior' if lang == 'es' else 'Previous' }}">{{ icon("arrow-right") }}</button>
+        <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="{{ 'Siguiente' if lang == 'es' else 'Next' }}">{{ icon("arrow-right") }}</button>
+        {% endif %}
+      </div>
+      {% if appProjects.length > 1 %}
+      <div class="carousel__dots" data-carousel-dots role="tablist" aria-label="{{ h.portfolio.appsLabel }}">
+        {% for project in appProjects %}
+        <button class="carousel__dot" type="button" data-carousel-dot="{{ loop.index0 }}" aria-label="{{ h.portfolio.appsLabel }} {{ loop.index }}"></button>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
+    {% endif %}
+
+    {% if webProjects.length > 0 %}
+    <div class="portfolio-group">
+      <p class="portfolio-group__title">{{ h.portfolio.webLabel }}</p>
+      <div class="portfolio-carousel" data-carousel>
+        <div class="portfolio-carousel__track" data-carousel-track>
+          {% for project in webProjects %}
+          <div class="portfolio-carousel__slide" data-carousel-slide>
+            {{ card(project, loop.index, lang, t) }}
+          </div>
+          {% endfor %}
+        </div>
+        {% if webProjects.length > 1 %}
+        <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="{{ 'Anterior' if lang == 'es' else 'Previous' }}">{{ icon("arrow-right") }}</button>
+        <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="{{ 'Siguiente' if lang == 'es' else 'Next' }}">{{ icon("arrow-right") }}</button>
+        {% endif %}
+      </div>
+      {% if webProjects.length > 1 %}
+      <div class="carousel__dots" data-carousel-dots role="tablist" aria-label="{{ h.portfolio.webLabel }}">
+        {% for project in webProjects %}
+        <button class="carousel__dot" type="button" data-carousel-dot="{{ loop.index0 }}" aria-label="{{ h.portfolio.webLabel }} {{ loop.index }}"></button>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
 </section>
 

@@ -45,14 +45,14 @@
       {% endfor %}
     </div>
     {% if project.images.length > 1 %}
-    <button class="case-carousel__arrow case-carousel__arrow--prev" type="button" data-carousel-prev aria-label="{{ 'Captura anterior' if lang == 'es' else 'Previous screenshot' }}">{{ icon("arrow-right") }}</button>
-    <button class="case-carousel__arrow case-carousel__arrow--next" type="button" data-carousel-next aria-label="{{ 'Captura siguiente' if lang == 'es' else 'Next screenshot' }}">{{ icon("arrow-right") }}</button>
+    <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="{{ 'Captura anterior' if lang == 'es' else 'Previous screenshot' }}">{{ icon("arrow-right") }}</button>
+    <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="{{ 'Captura siguiente' if lang == 'es' else 'Next screenshot' }}">{{ icon("arrow-right") }}</button>
     {% endif %}
   </div>
   {% if project.images.length > 1 %}
-  <div class="case-carousel__dots" data-carousel-dots role="tablist" aria-label="{{ t.case.galeria }}">
+  <div class="carousel__dots" data-carousel-dots role="tablist" aria-label="{{ t.case.galeria }}">
     {% for image in project.images %}
-    <button class="case-carousel__dot" type="button" data-carousel-dot="{{ loop.index0 }}" aria-label="{{ t.case.galeria }} {{ loop.index }}"></button>
+    <button class="carousel__dot" type="button" data-carousel-dot="{{ loop.index0 }}" aria-label="{{ t.case.galeria }} {{ loop.index }}"></button>
     {% endfor %}
   </div>
   {% endif %}
