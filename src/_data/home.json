@@ -79,7 +79,9 @@
     "portfolio": {
       "kicker": "04 — Portfolio",
       "heading": "Proyectos",
-      "lead": "Una muestra de en qué he estado trabajando. Cada proyecto incluye su contexto real: qué problema había, qué hice y cómo lo resolví."
+      "lead": "Una muestra de en qué he estado trabajando. Cada proyecto incluye su contexto real: qué problema había, qué hice y cómo lo resolví.",
+      "appsLabel": "Aplicaciones",
+      "webLabel": "Páginas web"
     },
     "about": {
       "kicker": "05 — Sobre mí",
@@ -198,7 +200,9 @@
     "portfolio": {
       "kicker": "04 — Portfolio",
       "heading": "Projects",
-      "lead": "A sample of what I've been working on. Each project includes real context: what the problem was, what I did and how I solved it."
+      "lead": "A sample of what I've been working on. Each project includes real context: what the problem was, what I did and how I solved it.",
+      "appsLabel": "Applications",
+      "webLabel": "Websites"
     },
     "about": {
       "kicker": "05 — About me",

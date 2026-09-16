@@ -13,6 +13,10 @@ module.exports = function (eleventyConfig) {
     return String(n).padStart(2, "0");
   });
 
+  eleventyConfig.addFilter("whereCategory", function (projects, category) {
+    return (projects || []).filter((p) => p.category === category);
+  });
+
   eleventyConfig.setServerOptions({
     domDiff: true,
   });

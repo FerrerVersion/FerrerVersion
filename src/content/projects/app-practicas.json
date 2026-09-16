@@ -1,6 +1,7 @@
 {
   "slug": "app-lourdes-iniesta",
   "order": 2,
+  "category": "app",
   "isPlaceholder": false,
   "year": "2026",
   "platform": {

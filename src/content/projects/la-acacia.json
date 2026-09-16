@@ -1,0 +1,34 @@
+{
+  "slug": "la-acacia",
+  "order": 1,
+  "category": "web",
+  "isPlaceholder": false,
+  "year": "2026",
+  "platform": {
+    "es": "Sitio web",
+    "en": "Website"
+  },
+  "tech": ["React", "TypeScript", "Tailwind CSS", "Vite"],
+  "links": {
+    "demo": null,
+    "github": null,
+    "external": null
+  },
+  "images": [
+    { "src": "/assets/img/proyectos/la-acacia/hero.jpg", "caption": { "es": "Portada del sitio", "en": "Site homepage" } }
+  ],
+  "es": {
+    "nombre": "La Acacia — Restaurante",
+    "resumen": "Web de un restaurante real en Buñol, construida como proyecto personal a partir de datos públicos verificables (Google Maps y Restaurant Guru): carta con precios reales, horario, valoraciones y fotografías del propio local.",
+    "problema": "Quise construir la web de un negocio real de principio a fin, más allá de un ejercicio de clase: con datos verídicos, las limitaciones reales de la información pública disponible y las decisiones de diseño y contenido que exige un caso real, aunque no fuera un encargo directo del restaurante.",
+    "miPapel": "Proyecto personal, no un encargo del restaurante: diseño y desarrollo completos, además de la investigación en fuentes públicas (Google Maps, Restaurant Guru) para reunir datos reales en vez de inventar contenido de relleno.",
+    "solucion": "Una web en React, TypeScript y Tailwind CSS con la carta real fotografiada de las pizarras del local, horario verificado con dos fuentes independientes, valoración real (3.6★ sobre 326 opiniones) enlazada a las reseñas, tres testimonios reales de clientes y fotografías propias del local, la terraza y el entorno. Los precios de arroces y bebidas, sin pizarra fotografiada disponible, quedan marcados como contenido de ejemplo hasta que el restaurante los confirme."
+  },
+  "en": {
+    "nombre": "La Acacia — Restaurant",
+    "resumen": "Website for a real restaurant in Buñol, built as a personal project from verifiable public data (Google Maps and Restaurant Guru): real menu prices, hours, ratings and photos of the actual venue.",
+    "problema": "I wanted to build a real business website from start to finish, beyond a classroom exercise: with truthful data, the real constraints of publicly available information, and the design and content decisions a real case demands — even though it wasn't a direct commission from the restaurant.",
+    "miPapel": "A personal project, not commissioned by the restaurant: full design and development, plus research into public sources (Google Maps, Restaurant Guru) to gather real data instead of inventing filler content.",
+    "solucion": "A React, TypeScript and Tailwind CSS site with the real menu photographed from the venue's chalkboards, hours verified across two independent sources, a real rating (3.6★ from 326 reviews) linking to the actual reviews, three real customer testimonials, and original photos of the venue, terrace and surroundings. Rice dishes and drinks pricing, for which no photographed chalkboard was available, are clearly marked as placeholder content until the restaurant confirms them."
+  }
+}
