@@ -81,13 +81,13 @@
 
   <div class="case-links">
     {% if project.links.demo %}
-    <a class="btn btn-primary" href="{{ project.links.demo }}">{{ t.case.verDemo }} {{ icon("arrow-up-right") }}</a>
+    <a class="btn btn-primary" href="{{ project.links.demo | url }}" {% if project.links.demo.startsWith('/') == false %}target="_blank" rel="noopener"{% endif %}>{{ t.case.verDemo }} {{ icon("arrow-up-right") }}</a>
     {% endif %}
     {% if project.links.github %}
-    <a class="btn btn-secondary" href="{{ project.links.github }}">{{ t.case.verCodigo }} {{ icon("arrow-up-right") }}</a>
+    <a class="btn btn-secondary" href="{{ project.links.github | url }}" target="_blank" rel="noopener">{{ t.case.verCodigo }} {{ icon("arrow-up-right") }}</a>
     {% endif %}
     {% if project.links.external %}
-    <a class="btn btn-secondary" href="{{ project.links.external }}">{{ t.case.visitar }} {{ icon("arrow-up-right") }}</a>
+    <a class="btn btn-secondary" href="{{ project.links.external | url }}" target="_blank" rel="noopener">{{ t.case.visitar }} {{ icon("arrow-up-right") }}</a>
     {% endif %}
     {% if project.links.memoria %}
     <a class="btn btn-secondary" href="{{ project.links.memoria | url }}">{{ t.case.verMemoria }} {{ icon("arrow-up-right") }}</a>

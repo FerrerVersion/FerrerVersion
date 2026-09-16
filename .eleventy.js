@@ -4,6 +4,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
   eleventyConfig.addPassthroughCopy({ "src/assets/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/assets/files": "assets/files" });
+  // Demos: builds estáticos completos de proyectos (p. ej. La Acacia),
+  // copiados tal cual — no pasan por el motor de plantillas de Eleventy.
+  eleventyConfig.addPassthroughCopy({ "src/demos": "demos" });
 
   eleventyConfig.addFilter("findAlt", function (projects, slug) {
     return (projects || []).find((p) => p.slug === slug);
