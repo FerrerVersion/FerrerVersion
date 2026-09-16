@@ -10,7 +10,7 @@
   },
   "tech": ["React", "TypeScript", "Tailwind CSS", "Vite"],
   "links": {
-    "demo": null,
+    "demo": "/demos/la-acacia/",
     "github": null,
     "external": null
   },
