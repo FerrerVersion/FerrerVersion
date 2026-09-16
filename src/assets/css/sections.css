@@ -620,6 +620,17 @@
   height: 100%;
 }
 
+@media (max-width: 639px) {
+  /* En móvil las tarjetas son altas (imagen + texto envuelto), así que el
+     centrado vertical al 50% de .carousel__arrow cae sobre el texto en vez
+     de sobre la imagen. Se ocultan y se confía en el swipe táctil + los
+     puntos, que ya sirven de indicador. A partir de 640px la tarjeta es más
+     corta/ancha y el centrado vuelve a caer bien, así que no se toca. */
+  .portfolio-carousel .carousel__arrow {
+    display: none;
+  }
+}
+
 @media (min-width: 640px) {
   .portfolio-carousel__slide {
     flex-basis: 58%;
