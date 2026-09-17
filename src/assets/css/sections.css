@@ -26,15 +26,6 @@
   font-size: var(--fs-lead);
 }
 
-.section__head--center {
-  margin-inline: auto;
-  text-align: center;
-}
-
-.section__head--center .kicker {
-  justify-content: center;
-}
-
 /* ---- Hero ---- */
 .hero {
   position: relative;
@@ -368,43 +359,6 @@
   .featured-case__media {
     position: sticky;
     top: var(--sp-24);
-  }
-}
-
-/* ---- Para tu negocio ---- */
-.for-business__list {
-  display: grid;
-  gap: var(--sp-4);
-  max-width: 42rem;
-  margin: var(--sp-12) auto 0;
-}
-
-.for-business__list li {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--sp-3);
-  font-size: var(--fs-lead);
-  color: var(--ink);
-  text-align: left;
-}
-
-.for-business__list li svg {
-  flex-shrink: 0;
-  width: 1em;
-  height: 1em;
-  margin-top: 0.35em;
-  color: var(--gold);
-}
-
-.for-business__cta {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--sp-16);
-}
-
-@media (min-width: 700px) {
-  .for-business__list {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 

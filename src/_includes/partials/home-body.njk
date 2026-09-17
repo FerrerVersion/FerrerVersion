@@ -286,26 +286,6 @@
   </div>
 </section>
 
-<section class="section section--alt" id="para-tu-negocio" data-reveal>
-  <div class="container">
-    <div class="section__head section__head--center">
-      <p class="kicker">{{ h.forBusiness.kicker }}</p>
-      <h2>{{ h.forBusiness.heading }}</h2>
-      <p>{{ h.forBusiness.lead }}</p>
-    </div>
-    <ul class="for-business__list">
-      {% for example in h.forBusiness.examples %}
-      <li>{{ icon("arrow-right") }} <span>{{ example }}</span></li>
-      {% endfor %}
-    </ul>
-    <div class="for-business__cta">
-      <a class="btn btn-primary" href="{{ ('/' if lang == 'es' else '/en/') | url }}#contacto">
-        {{ h.forBusiness.cta }} {{ icon("arrow-right") }}
-      </a>
-    </div>
-  </div>
-</section>
-
 <section class="section cta-final" data-reveal>
   <div class="container">
     <h2 class="cta-final__headline">{{ h.ctaFinal.headline }}</h2>

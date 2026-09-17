@@ -132,28 +132,13 @@
         { "title": "Herramientas", "items": ["Git y GitHub", "Autenticación de usuarios", "Paneles de administración", "Sistemas operativos", "Redes y sistemas microinformáticos"] }
       ]
     },
-    "forBusiness": {
-      "kicker": "08 — Para tu negocio",
-      "heading": "¿Tienes una idea para tu negocio?",
-      "lead": "Cuéntame qué necesitas y estudiamos juntos la mejor solución.",
-      "examples": [
-        "Necesito una página web.",
-        "Quiero una aplicación.",
-        "Quiero gestionar reservas.",
-        "Quiero digitalizar mi negocio.",
-        "Quiero un catálogo online.",
-        "Quiero conectar mi negocio con WhatsApp.",
-        "Tengo una idea y necesito ayuda para desarrollarla."
-      ],
-      "cta": "Cuéntame tu proyecto"
-    },
     "ctaFinal": {
       "headline": "¿Tienes una idea o un problema que resolver?",
-      "sub": "Cuéntame de qué se trata. Sin compromiso ni tecnicismos: solo una conversación para ver cómo puedo ayudarte.",
+      "sub": "Desde una web para tu negocio hasta un sistema de reservas o un catálogo conectado a WhatsApp: cuéntame de qué se trata. Sin compromiso ni tecnicismos.",
       "cta": "Hablemos de tu proyecto"
     },
     "contact": {
-      "kicker": "09 — Contacto",
+      "kicker": "08 — Contacto",
       "intro": "Empecemos con una conversación.",
       "sub": "Escríbeme por el canal que prefieras, o usa el formulario. Normalmente respondo en poco tiempo.",
       "formHeading": "Cuéntame tu proyecto",
@@ -293,28 +278,13 @@
         { "title": "Tools", "items": ["Git and GitHub", "User authentication", "Admin panels", "Operating systems", "Networks and microcomputer systems"] }
       ]
     },
-    "forBusiness": {
-      "kicker": "08 — For your business",
-      "heading": "Have an idea for your business?",
-      "lead": "Tell me what you need and we'll figure out the best solution together.",
-      "examples": [
-        "I need a website.",
-        "I want an app.",
-        "I want to manage bookings.",
-        "I want to digitize my business.",
-        "I want an online catalog.",
-        "I want to connect my business with WhatsApp.",
-        "I have an idea and need help building it."
-      ],
-      "cta": "Tell me about your project"
-    },
     "ctaFinal": {
       "headline": "Have an idea or a problem to solve?",
-      "sub": "Tell me about it. No commitment, no jargon — just a conversation to see how I can help.",
+      "sub": "From a website for your business to a booking system or a catalog connected to WhatsApp: tell me about it. No commitment, no jargon.",
       "cta": "Let's talk about your project"
     },
     "contact": {
-      "kicker": "09 — Contact",
+      "kicker": "08 — Contact",
       "intro": "Let's start with a conversation.",
       "sub": "Reach me through whichever channel you prefer, or use the form. I usually reply quickly.",
       "formHeading": "Tell me about your project",
