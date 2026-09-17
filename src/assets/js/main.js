@@ -69,6 +69,37 @@
     revealTargets.forEach((el) => el.classList.add("is-visible"));
   }
 
+  /* ---- Formulario de contacto: compone un mailto: con lo escrito ---- */
+  const contactForm = document.querySelector("[data-contact-form]");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const data = new FormData(contactForm);
+      const nombre = (data.get("nombre") || "").toString().trim();
+      const email = (data.get("email") || "").toString().trim();
+      const tipo = (data.get("tipo") || "").toString().trim();
+      const mensaje = (data.get("mensaje") || "").toString().trim();
+
+      const to = contactForm.getAttribute("data-mail");
+      const subject = contactForm.getAttribute("data-subject") || "";
+
+      const bodyLines = [
+        `Nombre: ${nombre}`,
+        `Email: ${email}`,
+        tipo ? `Tipo de proyecto: ${tipo}` : null,
+        "",
+        mensaje,
+      ].filter((line) => line !== null);
+
+      const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        bodyLines.join("\n")
+      )}`;
+
+      window.location.href = mailto;
+    });
+  }
+
   /* ---- Carrusel de capturas (caso de estudio) ---- */
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

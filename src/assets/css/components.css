@@ -86,6 +86,25 @@
   color: var(--gold-bright);
 }
 
+/* CTA terciario, de menor peso visual que primary/secondary (p. ej. "GitHub"
+   junto a los dos CTA principales del hero): sin fondo ni borde. */
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-muted);
+  border: 1px solid transparent;
+  padding-inline: var(--sp-2);
+}
+
+.btn-ghost:hover {
+  color: var(--gold-bright);
+}
+
+.btn-ghost .btn-icon,
+.btn-ghost svg:first-child {
+  width: 1.1em;
+  height: 1.1em;
+}
+
 .btn-icon {
   width: 1em;
   height: 1em;
@@ -399,7 +418,7 @@
   height: 18px;
 }
 
-/* ---- Formulario de contacto (placeholder, sin backend) ---- */
+/* ---- Formulario de contacto ---- */
 .field {
   display: flex;
   flex-direction: column;
@@ -416,19 +435,34 @@
 }
 
 .field input,
+.field select,
 .field textarea {
   background: transparent;
   border: 1px solid var(--hairline-strong);
   border-radius: var(--radius-sm);
   padding: 0.85rem 1rem;
   color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
   transition: border-color var(--dur-fast) var(--ease-out);
 }
 
 .field input:focus,
+.field select:focus,
 .field textarea:focus {
   border-color: var(--gold);
   outline: none;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.contact-form__note {
+  margin-top: var(--sp-4);
+  color: var(--ink-faint);
+  font-size: 0.85rem;
 }
 
 /* ---- Contacto: lista de canales ---- */
