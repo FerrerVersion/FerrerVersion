@@ -26,6 +26,15 @@
   font-size: var(--fs-lead);
 }
 
+.section__head--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section__head--center .kicker {
+  justify-content: center;
+}
+
 /* ---- Hero ---- */
 .hero {
   position: relative;
@@ -44,6 +53,15 @@
 .hero__inner {
   position: relative;
   max-width: 56rem;
+}
+
+.hero__name {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: var(--sp-3);
 }
 
 .hero__headline {
@@ -253,6 +271,135 @@
   max-width: 46ch;
 }
 
+/* ---- Caso destacado ---- */
+.featured-case {
+  display: grid;
+  gap: var(--sp-12);
+  margin-top: var(--sp-4);
+}
+
+.featured-case__media {
+  aspect-ratio: 4 / 3;
+  background: var(--bg-charcoal-2);
+  border: 1px solid var(--hairline);
+  overflow: hidden;
+}
+
+.featured-case__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-case__flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-8);
+}
+
+.featured-case__step {
+  position: relative;
+  padding-left: var(--sp-8);
+}
+
+.featured-case__step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.featured-case__step::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 1.3em;
+  bottom: -2rem;
+  width: 1px;
+  background: var(--hairline);
+}
+
+.featured-case__flow .featured-case__step:last-child::after {
+  display: none;
+}
+
+.featured-case__list {
+  margin: 0;
+  padding-left: 1.1em;
+  color: var(--ink);
+  font-size: var(--fs-body);
+}
+
+.featured-case__list li + li {
+  margin-top: var(--sp-2);
+}
+
+.featured-case__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.featured-case__actions {
+  margin-top: var(--sp-12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+@media (min-width: 900px) {
+  .featured-case {
+    grid-template-columns: 0.9fr 1.4fr;
+    align-items: start;
+  }
+
+  .featured-case__media {
+    position: sticky;
+    top: var(--sp-24);
+  }
+}
+
+/* ---- Para tu negocio ---- */
+.for-business__list {
+  display: grid;
+  gap: var(--sp-4);
+  max-width: 42rem;
+  margin: var(--sp-12) auto 0;
+}
+
+.for-business__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  font-size: var(--fs-lead);
+  color: var(--ink);
+  text-align: left;
+}
+
+.for-business__list li svg {
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.35em;
+  color: var(--gold);
+}
+
+.for-business__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--sp-16);
+}
+
+@media (min-width: 700px) {
+  .for-business__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ---- Portfolio ---- */
 .portfolio__list {
   display: flex;
@@ -376,6 +523,27 @@
   font-size: var(--fs-h2);
   font-weight: 400;
   max-width: 18ch;
+}
+
+.contact__channels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-16);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__heading {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  margin-bottom: var(--sp-6);
+}
+
+.contact-form .btn {
+  align-self: flex-start;
 }
 
 /* ---- Caso de estudio (detalle de proyecto) ---- */
@@ -764,10 +932,36 @@
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 640px) and (max-width: 1099px) {
   .process__list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--sp-8);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-8) var(--sp-12);
+  }
+
+  .process-step {
+    padding-left: 0;
+    padding-top: var(--sp-12);
+  }
+
+  .process-step::before {
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+  }
+
+  .process-step::after {
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    bottom: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .process__list {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--sp-6);
   }
 
   .process-step {

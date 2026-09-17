@@ -39,7 +39,33 @@
       "capturasPendientes": "Capturas pendientes",
       "arquitectura": "Arquitectura",
       "aprendizajes": "Qué aprendí",
-      "galeria": "Capturas"
+      "galeria": "Capturas",
+      "funcionalidades": "Funcionalidades",
+      "resultado": "Resultado",
+      "verProyectoCompleto": "Ver proyecto completo"
+    },
+    "casoDestacado": "Caso destacado",
+    "contactForm": {
+      "nombre": "Nombre",
+      "nombrePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "tipoProyecto": "Tipo de proyecto",
+      "tipoProyectoPlaceholder": "Elige una opción",
+      "tipoProyectoOptions": [
+        "Página web",
+        "Aplicación móvil",
+        "Sistema de reservas",
+        "Catálogo o pedidos",
+        "Panel de administración",
+        "Integración con otro sistema",
+        "Otro / no estoy seguro"
+      ],
+      "mensaje": "Mensaje",
+      "mensajePlaceholder": "Cuéntame qué necesitas",
+      "enviar": "Enviar consulta",
+      "mailSubject": "Consulta desde FerrerVersion.github.io",
+      "mailtoNote": "Se abrirá tu programa de correo con el mensaje ya redactado."
     }
   },
   "en": {
@@ -82,7 +108,33 @@
       "capturasPendientes": "Screenshots pending",
       "arquitectura": "Architecture",
       "aprendizajes": "What I learned",
-      "galeria": "Screenshots"
+      "galeria": "Screenshots",
+      "funcionalidades": "Features",
+      "resultado": "Result",
+      "verProyectoCompleto": "View full project"
+    },
+    "casoDestacado": "Featured case",
+    "contactForm": {
+      "nombre": "Name",
+      "nombrePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "tipoProyecto": "Project type",
+      "tipoProyectoPlaceholder": "Choose an option",
+      "tipoProyectoOptions": [
+        "Website",
+        "Mobile app",
+        "Booking system",
+        "Catalog or orders",
+        "Admin panel",
+        "Integration with another system",
+        "Other / not sure"
+      ],
+      "mensaje": "Message",
+      "mensajePlaceholder": "Tell me what you need",
+      "enviar": "Send inquiry",
+      "mailSubject": "Inquiry from FerrerVersion.github.io",
+      "mailtoNote": "This will open your email app with the message already drafted."
     }
   }
 }

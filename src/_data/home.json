@@ -2,10 +2,12 @@
   "es": {
     "hero": {
       "kicker": "Desarrollo web y de aplicaciones a medida",
+      "name": "Jorge Ferrer Gil",
       "headlineLines": ["Tu idea, convertida", "en un producto digital real."],
       "lede": "Soy Jorge Ferrer. Bajo el nombre FerrerVersion desarrollo páginas web, aplicaciones y sistemas a medida para negocios y proyectos que necesitan una solución hecha con criterio — no una plantilla más.",
       "ctaPrimary": "Hablemos de tu proyecto",
       "ctaSecondary": "Ver proyectos",
+      "ctaGithub": "GitHub",
       "meta": [
         { "label": "Especialidad", "value": "Desarrollo web y de aplicaciones a medida" },
         { "label": "Formación", "value": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma" },
@@ -24,32 +26,44 @@
     },
     "services": {
       "kicker": "02 — Servicios",
-      "heading": "En qué puedo ayudarte",
-      "lead": "Cuatro áreas donde puedo aportar valor real a tu negocio, explicadas en problemas — no en tecnologías.",
+      "heading": "¿Qué puedo hacer por tu negocio?",
+      "lead": "Seis áreas donde puedo aportar valor real a tu negocio, explicadas en problemas — no en tecnologías.",
       "items": [
         {
           "icon": "store",
-          "title": "Webs que representan tu negocio",
-          "desc": "Páginas y sitios corporativos rápidos, bien estructurados y pensados para convertir visitas en contactos — sin plantillas genéricas ni cargas eternas.",
+          "title": "Desarrollo web",
+          "desc": "Webs modernas, rápidas y adaptadas a móviles, pensadas para convertir visitas en contactos — sin plantillas genéricas ni cargas eternas.",
           "examples": ["Sitios corporativos", "Landing pages", "Portfolios"]
         },
         {
           "icon": "smartphone",
-          "title": "Aplicaciones a medida",
-          "desc": "Apps para que tus clientes reserven, compren, se registren o gestionen su actividad desde el móvil, con la lógica de negocio adaptada a cómo trabajas de verdad.",
+          "title": "Aplicaciones móviles",
+          "desc": "Aplicaciones Android e iOS adaptadas a las necesidades del negocio, con la lógica adaptada a cómo trabajas de verdad.",
           "examples": ["Android", "iOS", "Multiplataforma"]
         },
         {
-          "icon": "database",
-          "title": "Sistemas y paneles de gestión",
-          "desc": "Catálogos, reservas, pedidos, autenticación de usuarios y paneles de administración que centralizan lo que hoy gestionas a mano o en varias herramientas sueltas.",
-          "examples": ["Bases de datos", "CRUD", "Paneles de administración"]
+          "icon": "calendar-check",
+          "title": "Sistemas de reservas",
+          "desc": "Soluciones para gestionar citas, reservas y clientes, con calendario, disponibilidad y notificaciones integradas.",
+          "examples": ["Reserva de citas", "Calendarios", "Gestión de disponibilidad"]
         },
         {
-          "icon": "wrench",
-          "title": "Mantenimiento y mejora",
-          "desc": "Si ya tienes una web o aplicación, puedo revisarla, corregir problemas y añadir funcionalidades nuevas sin rehacer lo que ya funciona.",
-          "examples": ["Correcciones", "Nuevas funciones", "Integraciones"]
+          "icon": "layout-grid",
+          "title": "Catálogos y pedidos",
+          "desc": "Catálogos digitales, gestión de pedidos y conexión directa con WhatsApp para que tus clientes compren sin fricción.",
+          "examples": ["Catálogo digital", "WhatsApp Business API", "Pedidos"]
+        },
+        {
+          "icon": "database",
+          "title": "Paneles de administración",
+          "desc": "Paneles a medida para gestionar clientes, productos, citas y contenidos sin depender de nadie ni de hojas de cálculo sueltas.",
+          "examples": ["Angular", "React", "CRUD"]
+        },
+        {
+          "icon": "layers",
+          "title": "Integraciones",
+          "desc": "Conexiones entre aplicaciones, APIs, bases de datos y servicios externos para que todas tus herramientas hablen entre sí.",
+          "examples": ["API REST", "Firebase", "Autenticación"]
         }
       ]
     },
@@ -59,32 +73,41 @@
       "lead": "Sabes en todo momento en qué punto está tu proyecto.",
       "steps": [
         {
-          "title": "Conversación inicial",
-          "desc": "Me cuentas tu idea o problema. Sin tecnicismos: quiero entender el negocio antes que la tecnología."
+          "title": "Analizo tu idea",
+          "desc": "Entiendo las necesidades y objetivos de tu negocio. Sin tecnicismos: quiero entender el problema antes que la tecnología."
         },
         {
-          "title": "Propuesta y alcance",
-          "desc": "Definimos juntos qué se va a construir, con qué prioridad y qué necesitas realmente para lanzar."
+          "title": "Diseño la solución",
+          "desc": "Defino la estructura, las funcionalidades y la experiencia de usuario antes de escribir una sola línea de código."
         },
         {
           "title": "Desarrollo",
-          "desc": "Construyo la solución con actualizaciones regulares, para que veas el progreso real, no solo el resultado final."
+          "desc": "Construyo la web, aplicación o sistema con actualizaciones regulares, para que veas el progreso real."
         },
         {
-          "title": "Entrega y seguimiento",
-          "desc": "Pongo el proyecto en marcha y sigo disponible para ajustes, dudas o siguientes fases."
+          "title": "Pruebo y optimizo",
+          "desc": "Compruebo el funcionamiento, la compatibilidad entre dispositivos y el rendimiento antes de entregarlo."
+        },
+        {
+          "title": "Entrego y mantengo",
+          "desc": "Dejo la solución lista y en marcha, y sigo disponible para ajustes, dudas o mantenimiento."
         }
       ]
     },
+    "featuredCase": {
+      "kicker": "04 — Caso destacado",
+      "heading": "MOBII, de principio a fin",
+      "lead": "Un ejemplo real de cómo trabajo: un problema concreto, resuelto con las tres capas de un sistema completo."
+    },
     "portfolio": {
-      "kicker": "04 — Portfolio",
+      "kicker": "05 — Portfolio",
       "heading": "Proyectos",
       "lead": "Una muestra de en qué he estado trabajando. Cada proyecto incluye su contexto real: qué problema había, qué hice y cómo lo resolví.",
       "appsLabel": "Aplicaciones",
       "webLabel": "Páginas web"
     },
     "about": {
-      "kicker": "05 — Sobre mí",
+      "kicker": "06 — Sobre mí",
       "heading": "Quién hay detrás de FerrerVersion",
       "paragraphs": [
         "Soy Jorge, desarrollador con formación en Grado Superior en Desarrollo de Aplicaciones Multiplataforma y Grado Medio en Sistemas Microinformáticos y Redes. Empecé por el lado más técnico — montar equipos, resolver incidencias, instalar sistemas — antes de especializarme en programación, y esa base sigue marcando cómo trabajo: entender primero cómo funciona algo, para después construirlo bien.",
@@ -98,15 +121,31 @@
       ]
     },
     "capabilities": {
-      "kicker": "06 — Capacidades",
+      "kicker": "07 — Capacidades",
       "heading": "Con qué trabajo",
       "lead": "Sin porcentajes ni barras de progreso: estas son las herramientas con las que construyo software real hoy.",
       "groups": [
-        { "title": "Desarrollo móvil", "items": ["Kotlin", "Android nativo", "Firebase", "Firestore"] },
-        { "title": "Desarrollo web", "items": ["HTML", "CSS", "JavaScript"] },
-        { "title": "Datos y sistemas", "items": ["Autenticación de usuarios", "Bases de datos", "Paneles de administración"] },
-        { "title": "Herramientas y flujo", "items": ["Git y GitHub", "Sistemas operativos", "Redes y sistemas microinformáticos"] }
+        { "title": "Frontend", "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular"] },
+        { "title": "Backend", "items": ["Node.js", "Express", "JWT", "API REST"] },
+        { "title": "Mobile", "items": ["Java", "Kotlin", "Android nativo", "Swift", "SwiftUI"] },
+        { "title": "Bases de datos", "items": ["Firebase", "Firestore", "SQLite"] },
+        { "title": "Herramientas", "items": ["Git y GitHub", "Autenticación de usuarios", "Paneles de administración", "Sistemas operativos", "Redes y sistemas microinformáticos"] }
       ]
+    },
+    "forBusiness": {
+      "kicker": "08 — Para tu negocio",
+      "heading": "¿Tienes una idea para tu negocio?",
+      "lead": "Cuéntame qué necesitas y estudiamos juntos la mejor solución.",
+      "examples": [
+        "Necesito una página web.",
+        "Quiero una aplicación.",
+        "Quiero gestionar reservas.",
+        "Quiero digitalizar mi negocio.",
+        "Quiero un catálogo online.",
+        "Quiero conectar mi negocio con WhatsApp.",
+        "Tengo una idea y necesito ayuda para desarrollarla."
+      ],
+      "cta": "Cuéntame tu proyecto"
     },
     "ctaFinal": {
       "headline": "¿Tienes una idea o un problema que resolver?",
@@ -114,19 +153,22 @@
       "cta": "Hablemos de tu proyecto"
     },
     "contact": {
-      "kicker": "07 — Contacto",
+      "kicker": "09 — Contacto",
       "intro": "Empecemos con una conversación.",
-      "sub": "Escríbeme por el canal que prefieras. Normalmente respondo en poco tiempo.",
+      "sub": "Escríbeme por el canal que prefieras, o usa el formulario. Normalmente respondo en poco tiempo.",
+      "formHeading": "Cuéntame tu proyecto",
       "labels": { "email": "Email", "whatsapp": "WhatsApp", "github": "GitHub", "linkedin": "LinkedIn", "cv": "Currículum" }
     }
   },
   "en": {
     "hero": {
       "kicker": "Web and custom application development",
+      "name": "Jorge Ferrer Gil",
       "headlineLines": ["Your idea, turned into", "a real digital product."],
       "lede": "I'm Jorge Ferrer. Under the name FerrerVersion I build websites, applications and custom systems for businesses and projects that need a solution built with judgment — not another template.",
       "ctaPrimary": "Let's talk about your project",
       "ctaSecondary": "View projects",
+      "ctaGithub": "GitHub",
       "meta": [
         { "label": "Focus", "value": "Web and custom application development" },
         { "label": "Background", "value": "Higher Diploma in Multi-platform Application Development" },
@@ -145,32 +187,44 @@
     },
     "services": {
       "kicker": "02 — Services",
-      "heading": "How I can help",
-      "lead": "Four areas where I can bring real value to your business, explained through problems — not technologies.",
+      "heading": "How can I help your business?",
+      "lead": "Six areas where I can bring real value to your business, explained through problems — not technologies.",
       "items": [
         {
           "icon": "store",
-          "title": "Websites that represent your business",
-          "desc": "Fast, well-structured corporate sites designed to turn visits into contacts — no generic templates, no endless loading.",
+          "title": "Web development",
+          "desc": "Modern, fast, mobile-ready websites designed to turn visits into contacts — no generic templates, no endless loading.",
           "examples": ["Corporate sites", "Landing pages", "Portfolios"]
         },
         {
           "icon": "smartphone",
-          "title": "Custom applications",
-          "desc": "Apps that let your customers book, buy, sign up or manage their activity from their phone, with business logic that matches how you actually work.",
+          "title": "Mobile applications",
+          "desc": "Android and iOS applications tailored to your business, with logic that matches how you actually work.",
           "examples": ["Android", "iOS", "Cross-platform"]
         },
         {
-          "icon": "database",
-          "title": "Systems and admin dashboards",
-          "desc": "Catalogs, bookings, orders, user authentication and admin panels that centralize what you currently manage by hand or across scattered tools.",
-          "examples": ["Databases", "CRUD", "Admin panels"]
+          "icon": "calendar-check",
+          "title": "Booking systems",
+          "desc": "Solutions to manage appointments, bookings and clients, with calendar, availability and built-in notifications.",
+          "examples": ["Appointment booking", "Calendars", "Availability management"]
         },
         {
-          "icon": "wrench",
-          "title": "Maintenance and improvements",
-          "desc": "If you already have a website or app, I can review it, fix issues and add new features without rebuilding what already works.",
-          "examples": ["Bug fixes", "New features", "Integrations"]
+          "icon": "layout-grid",
+          "title": "Catalogs and orders",
+          "desc": "Digital catalogs, order management and direct WhatsApp connection so your customers can buy without friction.",
+          "examples": ["Digital catalog", "WhatsApp Business API", "Orders"]
+        },
+        {
+          "icon": "database",
+          "title": "Admin panels",
+          "desc": "Custom panels to manage clients, products, appointments and content without depending on anyone or scattered spreadsheets.",
+          "examples": ["Angular", "React", "CRUD"]
+        },
+        {
+          "icon": "layers",
+          "title": "Integrations",
+          "desc": "Connections between applications, APIs, databases and external services so all your tools talk to each other.",
+          "examples": ["REST API", "Firebase", "Authentication"]
         }
       ]
     },
@@ -180,32 +234,41 @@
       "lead": "You always know exactly where your project stands.",
       "steps": [
         {
-          "title": "Initial conversation",
-          "desc": "You tell me about your idea or problem. No jargon — I want to understand the business before the technology."
+          "title": "I analyze your idea",
+          "desc": "I understand your business's needs and goals. No jargon — I want to understand the problem before the technology."
         },
         {
-          "title": "Proposal and scope",
-          "desc": "We define together what's going to be built, in what order, and what you actually need to launch."
+          "title": "I design the solution",
+          "desc": "I define the structure, features and user experience before writing a single line of code."
         },
         {
           "title": "Development",
-          "desc": "I build the solution with regular updates, so you see real progress, not just the final result."
+          "desc": "I build the website, application or system with regular updates, so you see real progress."
         },
         {
-          "title": "Delivery and follow-up",
-          "desc": "I launch the project and stay available for adjustments, questions or the next phase."
+          "title": "I test and optimize",
+          "desc": "I check functionality, cross-device compatibility and performance before delivering it."
+        },
+        {
+          "title": "Delivery and maintenance",
+          "desc": "I launch the solution and stay available for adjustments, questions or ongoing maintenance."
         }
       ]
     },
+    "featuredCase": {
+      "kicker": "04 — Featured case",
+      "heading": "MOBII, start to finish",
+      "lead": "A real example of how I work: a concrete problem, solved with all three layers of a complete system."
+    },
     "portfolio": {
-      "kicker": "04 — Portfolio",
+      "kicker": "05 — Portfolio",
       "heading": "Projects",
       "lead": "A sample of what I've been working on. Each project includes real context: what the problem was, what I did and how I solved it.",
       "appsLabel": "Applications",
       "webLabel": "Websites"
     },
     "about": {
-      "kicker": "05 — About me",
+      "kicker": "06 — About me",
       "heading": "The person behind FerrerVersion",
       "paragraphs": [
         "I'm Jorge, a developer with a Higher Diploma in Multi-platform Application Development and a Technical Diploma in Microcomputer Systems and Networks. I started on the more technical side — building PCs, troubleshooting, installing systems — before specializing in programming, and that foundation still shapes how I work: understand how something works first, then build it properly.",
@@ -219,15 +282,31 @@
       ]
     },
     "capabilities": {
-      "kicker": "06 — Capabilities",
+      "kicker": "07 — Capabilities",
       "heading": "What I work with",
       "lead": "No percentages, no skill bars — these are the tools I use to build real software today.",
       "groups": [
-        { "title": "Mobile development", "items": ["Kotlin", "Native Android", "Firebase", "Firestore"] },
-        { "title": "Web development", "items": ["HTML", "CSS", "JavaScript"] },
-        { "title": "Data and systems", "items": ["User authentication", "Databases", "Admin panels"] },
-        { "title": "Tools and workflow", "items": ["Git and GitHub", "Operating systems", "Networks and microcomputer systems"] }
+        { "title": "Frontend", "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular"] },
+        { "title": "Backend", "items": ["Node.js", "Express", "JWT", "REST API"] },
+        { "title": "Mobile", "items": ["Java", "Kotlin", "Native Android", "Swift", "SwiftUI"] },
+        { "title": "Databases", "items": ["Firebase", "Firestore", "SQLite"] },
+        { "title": "Tools", "items": ["Git and GitHub", "User authentication", "Admin panels", "Operating systems", "Networks and microcomputer systems"] }
       ]
+    },
+    "forBusiness": {
+      "kicker": "08 — For your business",
+      "heading": "Have an idea for your business?",
+      "lead": "Tell me what you need and we'll figure out the best solution together.",
+      "examples": [
+        "I need a website.",
+        "I want an app.",
+        "I want to manage bookings.",
+        "I want to digitize my business.",
+        "I want an online catalog.",
+        "I want to connect my business with WhatsApp.",
+        "I have an idea and need help building it."
+      ],
+      "cta": "Tell me about your project"
     },
     "ctaFinal": {
       "headline": "Have an idea or a problem to solve?",
@@ -235,9 +314,10 @@
       "cta": "Let's talk about your project"
     },
     "contact": {
-      "kicker": "07 — Contact",
+      "kicker": "09 — Contact",
       "intro": "Let's start with a conversation.",
-      "sub": "Reach me through whichever channel you prefer. I usually reply quickly.",
+      "sub": "Reach me through whichever channel you prefer, or use the form. I usually reply quickly.",
+      "formHeading": "Tell me about your project",
       "labels": { "email": "Email", "whatsapp": "WhatsApp", "github": "GitHub", "linkedin": "LinkedIn", "cv": "Resume" }
     }
   }

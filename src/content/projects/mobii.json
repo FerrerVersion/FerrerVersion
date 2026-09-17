@@ -30,7 +30,15 @@
     "miPapel": "Proyecto de Fin de Ciclo (DAM) desarrollado en solitario a lo largo de 12 semanas: análisis y diseño, backend, app Android, panel de administración, sincronización y pruebas. Diseñé el modelo de datos, construí las tres capas del sistema y las conecté entre sí.",
     "solucion": "Una app Android nativa en Java que centraliza mapas de aparcamiento accesible con datos reales del Open Data del Ayuntamiento de Valencia, reserva de taxi adaptado, un directorio de centros especializados filtrado por tipo de discapacidad y actividades de ocio accesible —con favoritos y citas sincronizados contra una API REST propia (Node.js + Express + JWT) y un panel de administración en Angular para gestionar usuarios.",
     "arquitectura": "Tres capas independientes conectadas por API REST, pensadas para poder cambiar cualquiera de ellas sin tocar las demás: la app Android (Java, Retrofit, ORMLite, mapas Leaflet embebidos vía WebView), el backend (Node.js, Express, autenticación JWT, SQLite) y el panel web de administración (Angular, TypeScript, RxJS). En el dispositivo, ORMLite guarda copia local de favoritos y reservas para que la app funcione también sin conexión.",
-    "aprendizajes": "Lo más complicado fue el mapa con Leaflet.js embebido en un WebView: hubo que resolver la comunicación JavaScript–Java con @JavascriptInterface y varios errores de CORS, moviendo finalmente todas las peticiones HTTP al lado Java. La sincronización offline sigue siendo la parte más frágil del sistema: suficiente para el alcance de un TFG, pero en una versión real haría falta una cola de sincronización pendiente."
+    "aprendizajes": "Lo más complicado fue el mapa con Leaflet.js embebido en un WebView: hubo que resolver la comunicación JavaScript–Java con @JavascriptInterface y varios errores de CORS, moviendo finalmente todas las peticiones HTTP al lado Java. La sincronización offline sigue siendo la parte más frágil del sistema: suficiente para el alcance de un TFG, pero en una versión real haría falta una cola de sincronización pendiente.",
+    "funcionalidades": [
+      "Mapas de aparcamiento accesible con datos reales del Open Data del Ayuntamiento de Valencia",
+      "Reserva de taxi adaptado con formulario y citas",
+      "Directorio de centros especializados filtrado por tipo de discapacidad",
+      "Actividades de ocio accesible con favoritos guardados",
+      "Sincronización de favoritos y reservas contra una API REST propia, con copia local para funcionar sin conexión"
+    ],
+    "resultado": "Proyecto de Fin de Ciclo (DAM) completado en solitario en 12 semanas, con las tres capas —app, API y panel de administración— funcionando de extremo a extremo y memoria técnica completa entregada y descargable."
   },
   "en": {
     "nombre": "MOBII — Accessible Mobility for Everyone",
@@ -39,6 +47,14 @@
     "miPapel": "A solo-built Final Degree Project (DAM) over 12 weeks: analysis and design, backend, Android app, admin panel, synchronization and testing. I designed the data model, built all three layers of the system and connected them together.",
     "solucion": "A native Android app in Java that centralizes accessible parking maps using real data from Valencia City Council's Open Data portal, adapted taxi booking, a directory of specialized centers filterable by disability type, and accessible leisure activities — with favorites and bookings synced against a custom REST API (Node.js + Express + JWT) and an Angular admin panel for managing users.",
     "arquitectura": "Three independent layers connected through a REST API, designed so any one of them could be swapped out without touching the others: the Android app (Java, Retrofit, ORMLite, Leaflet maps embedded via WebView), the backend (Node.js, Express, JWT authentication, SQLite) and the web admin panel (Angular, TypeScript, RxJS). On-device, ORMLite keeps a local copy of favorites and bookings so the app also works offline.",
-    "aprendizajes": "The hardest part was the Leaflet.js map embedded inside a WebView: it required working out the JavaScript–Java bridge with @JavascriptInterface and fixing several CORS errors, eventually moving all HTTP requests to the Java side. Offline sync is still the most fragile part of the system — good enough for the scope of a final degree project, but a production version would need a proper pending-sync queue."
+    "aprendizajes": "The hardest part was the Leaflet.js map embedded inside a WebView: it required working out the JavaScript–Java bridge with @JavascriptInterface and fixing several CORS errors, eventually moving all HTTP requests to the Java side. Offline sync is still the most fragile part of the system — good enough for the scope of a final degree project, but a production version would need a proper pending-sync queue.",
+    "funcionalidades": [
+      "Accessible parking maps using real data from Valencia City Council's Open Data portal",
+      "Adapted taxi booking with a form and appointments",
+      "Directory of specialized centers, filterable by disability type",
+      "Accessible leisure activities with saved favorites",
+      "Syncs favorites and bookings against a custom REST API, with a local copy so it also works offline"
+    ],
+    "resultado": "A Final Degree Project (DAM) completed solo over 12 weeks, with all three layers — app, API and admin panel — working end to end, plus a complete, downloadable technical report."
   }
 }

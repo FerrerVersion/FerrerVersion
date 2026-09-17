@@ -11,6 +11,7 @@
     <rect width="100%" height="100%" filter="url(#fv-grain)"></rect>
   </svg>
   <div class="container hero__inner">
+    <p class="hero__name">{{ h.hero.name }}</p>
     <p class="kicker">{{ h.hero.kicker }}</p>
     <h1 class="hero__headline">
       {% for line in h.hero.headlineLines %}
@@ -32,6 +33,9 @@
       </a>
       <a class="btn btn-secondary" href="{{ ('/' if lang == 'es' else '/en/') | url }}#proyectos">
         {{ h.hero.ctaSecondary }}
+      </a>
+      <a class="btn btn-ghost" href="{{ site.contact.githubHref }}" target="_blank" rel="noopener">
+        {{ icon("github") }} {{ h.hero.ctaGithub }}
       </a>
     </div>
 
@@ -106,7 +110,73 @@
   </div>
 </section>
 
-<section class="section section--alt" id="proyectos" data-reveal>
+{% set mobii = projects | findAlt("mobii") %}
+{% if mobii %}
+{% set mc = mobii[lang] %}
+<section class="section section--alt" id="caso-destacado" data-reveal>
+  <div class="container">
+    <div class="section__head">
+      <p class="kicker">{{ h.featuredCase.kicker }}</p>
+      <h2>{{ h.featuredCase.heading }}</h2>
+      <p>{{ h.featuredCase.lead }}</p>
+    </div>
+
+    <div class="featured-case">
+      {% if mobii.images and mobii.images.length > 0 %}
+      <div class="featured-case__media">
+        <img src="{{ mobii.images[0].src | url }}" alt="{{ mobii.images[0].caption[lang] or mc.nombre }}" loading="lazy" />
+      </div>
+      {% endif %}
+
+      <div class="featured-case__flow">
+        <div class="featured-case__step">
+          <p class="case-block__title">{{ t.case.problema }}</p>
+          <p class="case-block__text">{{ mc.problema }}</p>
+        </div>
+        <div class="featured-case__step">
+          <p class="case-block__title">{{ t.case.solucion }}</p>
+          <p class="case-block__text">{{ mc.solucion }}</p>
+        </div>
+        {% if mc.funcionalidades %}
+        <div class="featured-case__step">
+          <p class="case-block__title">{{ t.case.funcionalidades }}</p>
+          <ul class="featured-case__list">
+            {% for item in mc.funcionalidades %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        <div class="featured-case__step">
+          <p class="case-block__title">{{ t.case.tecnologias }}</p>
+          <div class="featured-case__tags">
+            {% for item in mobii.tech %}<span class="tag">{{ item }}</span>{% endfor %}
+          </div>
+        </div>
+        {% if mc.resultado %}
+        <div class="featured-case__step">
+          <p class="case-block__title">{{ t.case.resultado }}</p>
+          <p class="case-block__text">{{ mc.resultado }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="featured-case__actions">
+      <a class="btn btn-primary" href="{{ (("/proyectos/" if lang == "es" else "/en/proyectos/") + mobii.slug + "/") | url }}">
+        {{ t.case.verProyectoCompleto }} {{ icon("arrow-right") }}
+      </a>
+      {% if mobii.links.memoria %}
+      <a class="btn btn-secondary" href="{{ mobii.links.memoria | url }}">
+        {{ t.case.verMemoria }} {{ icon("arrow-up-right") }}
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section" id="proyectos" data-reveal>
   <div class="container">
     <div class="section__head">
       <p class="kicker">{{ h.portfolio.kicker }}</p>
@@ -171,7 +241,7 @@
   </div>
 </section>
 
-<section class="section" id="sobre-mi" data-reveal>
+<section class="section section--alt" id="sobre-mi" data-reveal>
   <div class="container about__grid">
     <div>
       <p class="kicker">{{ h.about.kicker }}</p>
@@ -194,7 +264,7 @@
   </div>
 </section>
 
-<section class="section section--alt" id="capacidades" data-reveal>
+<section class="section" id="capacidades" data-reveal>
   <div class="container">
     <div class="section__head">
       <p class="kicker">{{ h.capabilities.kicker }}</p>
@@ -212,6 +282,26 @@
         </div>
       </div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="para-tu-negocio" data-reveal>
+  <div class="container">
+    <div class="section__head section__head--center">
+      <p class="kicker">{{ h.forBusiness.kicker }}</p>
+      <h2>{{ h.forBusiness.heading }}</h2>
+      <p>{{ h.forBusiness.lead }}</p>
+    </div>
+    <ul class="for-business__list">
+      {% for example in h.forBusiness.examples %}
+      <li>{{ icon("arrow-right") }} <span>{{ example }}</span></li>
+      {% endfor %}
+    </ul>
+    <div class="for-business__cta">
+      <a class="btn btn-primary" href="{{ ('/' if lang == 'es' else '/en/') | url }}#contacto">
+        {{ h.forBusiness.cta }} {{ icon("arrow-right") }}
+      </a>
     </div>
   </div>
 </section>
@@ -235,6 +325,7 @@
       <p class="contact__intro">{{ h.contact.intro }}</p>
       <p style="color: var(--ink-muted); margin-top: var(--sp-4); max-width: 32ch;">{{ h.contact.sub }}</p>
     </div>
+    <div class="contact__channels">
     <ul class="contact-list">
       <li class="contact-list__item">
         <span class="contact-list__label">{{ h.contact.labels.email }}</span>
@@ -275,5 +366,41 @@
       </li>
       {% endif %}
     </ul>
+
+    <form class="contact-form" data-contact-form data-mail="{{ site.contact.email }}" data-subject="{{ t.contactForm.mailSubject }}" action="mailto:{{ site.contact.email }}" method="post" enctype="text/plain">
+      <p class="contact-form__heading">{{ h.contact.formHeading }}</p>
+
+      <div class="field">
+        <label for="cf-nombre">{{ t.contactForm.nombre }}</label>
+        <input type="text" id="cf-nombre" name="nombre" placeholder="{{ t.contactForm.nombrePlaceholder }}" autocomplete="name" required />
+      </div>
+
+      <div class="field">
+        <label for="cf-email">{{ t.contactForm.email }}</label>
+        <input type="email" id="cf-email" name="email" placeholder="{{ t.contactForm.emailPlaceholder }}" autocomplete="email" required />
+      </div>
+
+      <div class="field">
+        <label for="cf-tipo">{{ t.contactForm.tipoProyecto }}</label>
+        <select id="cf-tipo" name="tipo">
+          <option value="" disabled selected>{{ t.contactForm.tipoProyectoPlaceholder }}</option>
+          {% for opt in t.contactForm.tipoProyectoOptions %}
+          <option value="{{ opt }}">{{ opt }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="cf-mensaje">{{ t.contactForm.mensaje }}</label>
+        <textarea id="cf-mensaje" name="mensaje" placeholder="{{ t.contactForm.mensajePlaceholder }}" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        {{ t.contactForm.enviar }} {{ icon("send") }}
+      </button>
+
+      <p class="contact-form__note">{{ t.contactForm.mailtoNote }}</p>
+    </form>
+    </div>
   </div>
 </section>
