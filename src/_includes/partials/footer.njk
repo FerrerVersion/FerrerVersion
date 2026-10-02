@@ -33,6 +33,19 @@
           <a href="{{ esUrl | url }}" hreflang="es">Español</a>
           <a href="{{ enUrl | url }}" hreflang="en">English</a>
         </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">{{ t.footer.legal }}</p>
+          {% if lang == "es" %}
+          <a href="{{ '/aviso-legal/' | url }}">{{ t.legal.avisoLegal }}</a>
+          <a href="{{ '/politica-privacidad/' | url }}">{{ t.legal.privacidad }}</a>
+          <a href="{{ '/politica-cookies/' | url }}">{{ t.legal.cookies }}</a>
+          {% else %}
+          <a href="{{ '/en/legal-notice/' | url }}">{{ t.legal.avisoLegal }}</a>
+          <a href="{{ '/en/privacy-policy/' | url }}">{{ t.legal.privacidad }}</a>
+          <a href="{{ '/en/cookie-policy/' | url }}">{{ t.legal.cookies }}</a>
+          {% endif %}
+        </div>
       </div>
     </div>
 

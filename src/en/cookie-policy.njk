@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+lang: en
+esUrl: /politica-cookies/
+enUrl: /en/cookie-policy/
+pageTitle: "Cookie policy — FerrerVersion"
+pageDescription: "This website does not use first-party or third-party cookies for analytics, advertising or tracking."
+---
+{% from "partials/icons.njk" import icon %}
+{% set homePath = "/en/" | url %}
+<article class="legal-hero container">
+  <a class="case-hero__back link-underline" href="{{ homePath }}">
+    {{ icon("arrow-right") }} {{ t.nav.inicio }}
+  </a>
+  <h1 class="legal-hero__title">{{ t.legal.cookies }}</h1>
+  <p class="legal-hero__updated">{{ t.legal.actualizado }}</p>
+</article>
+
+<section class="container legal">
+  <h2>No cookies</h2>
+  <p>This site does not use first-party or third-party cookies for analytics, advertising or tracking. You can browse it without any cookie being installed on your device.</p>
+
+  <h2>If this changes</h2>
+  <p>If an analytics tool is added in the future (for example, GoatCounter, which works without cookies), this page will be updated to reflect it in full detail.</p>
+
+  <p class="legal__disclaimer">{{ t.legal.disclaimer }}</p>
+</section>

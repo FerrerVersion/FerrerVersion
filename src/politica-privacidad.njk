@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+lang: es
+esUrl: /politica-privacidad/
+enUrl: /en/privacy-policy/
+pageTitle: "Política de privacidad — FerrerVersion"
+pageDescription: "Política de privacidad del sitio web de Jorge Ferrer Gil (FerrerVersion): qué datos se recogen, con qué finalidad y cómo ejercer tus derechos."
+---
+{% from "partials/icons.njk" import icon %}
+{% set homePath = "/" | url %}
+<article class="legal-hero container">
+  <a class="case-hero__back link-underline" href="{{ homePath }}">
+    {{ icon("arrow-right") }} {{ t.nav.inicio }}
+  </a>
+  <h1 class="legal-hero__title">{{ t.legal.privacidad }}</h1>
+  <p class="legal-hero__updated">{{ t.legal.actualizado }}</p>
+</article>
+
+<section class="container legal">
+  <h2>1. Responsable del tratamiento</h2>
+  <p>Jorge Ferrer Gil, con ubicación en Buñol, Valencia (España). Contacto: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.</p>
+
+  <h2>2. Qué datos se recogen</h2>
+  <p>A través del formulario de contacto de esta web se recogen los siguientes datos: nombre, email, tipo de proyecto y el mensaje que escribas.</p>
+  <p>Actualmente, este formulario utiliza el cliente de correo de tu propio dispositivo (enlace "mailto"): al pulsar "Enviar consulta" se abre tu programa de correo con estos datos ya redactados, y eres tú quien decide enviarlos. Esto significa que, por ahora, estos datos <strong>no pasan por ningún servidor ni servicio intermedio</strong>: viajan directamente desde tu programa de correo hasta la bandeja de entrada del titular. Si en el futuro se integra un servicio externo de formularios, esta política se actualizará para identificar a dicho encargado del tratamiento.</p>
+
+  <h2>3. Finalidad</h2>
+  <p>Responder a las consultas comerciales que envíes a través del formulario o de los canales de contacto de la web (email, WhatsApp).</p>
+
+  <h2>4. Base legal</h2>
+  <p>El consentimiento del interesado, prestado al rellenar y enviar voluntariamente el formulario (art. 6.1.a del Reglamento General de Protección de Datos, RGPD).</p>
+
+  <h2>5. Conservación de los datos</h2>
+  <p>Los datos se conservarán el tiempo necesario para gestionar tu consulta, y no se utilizarán con una finalidad distinta sin tu consentimiento adicional.</p>
+
+  <h2>6. Destinatarios y encargados del tratamiento</h2>
+  <p>No se ceden datos a terceros, salvo obligación legal. Mientras el formulario funcione mediante "mailto" (ver punto 2), no interviene ningún encargado del tratamiento externo.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de tus datos escribiendo a <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>, indicando el derecho que deseas ejercer.</p>
+
+  <p class="legal__disclaimer">{{ t.legal.disclaimer }}</p>
+</section>

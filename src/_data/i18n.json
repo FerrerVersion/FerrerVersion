@@ -18,7 +18,15 @@
       "navegacion": "Navegación",
       "conecta": "Conecta",
       "idioma": "Idioma",
+      "legal": "Legal",
       "copyright": "Todos los derechos reservados."
+    },
+    "legal": {
+      "avisoLegal": "Aviso legal",
+      "privacidad": "Política de privacidad",
+      "cookies": "Política de cookies",
+      "actualizado": "Última actualización: octubre de 2026",
+      "disclaimer": "Texto orientativo redactado como punto de partida. Revísalo con un profesional (asesoría o abogado) antes de publicar la web, especialmente si cambias de actividad, formulario de contacto o herramientas de analítica."
     },
     "langSwitchLabel": "Cambiar idioma",
     "verProyecto": "Ver caso de estudio",
@@ -87,7 +95,15 @@
       "navegacion": "Navigation",
       "conecta": "Connect",
       "idioma": "Language",
+      "legal": "Legal",
       "copyright": "All rights reserved."
+    },
+    "legal": {
+      "avisoLegal": "Legal notice",
+      "privacidad": "Privacy policy",
+      "cookies": "Cookie policy",
+      "actualizado": "Last updated: October 2026",
+      "disclaimer": "General-purpose draft text meant as a starting point. Have it reviewed by a professional (a lawyer or advisor) before publishing the site, especially if your business status, contact form or analytics tools change."
     },
     "langSwitchLabel": "Switch language",
     "verProyecto": "View case study",

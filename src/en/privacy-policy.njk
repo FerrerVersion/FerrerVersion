@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+lang: en
+esUrl: /politica-privacidad/
+enUrl: /en/privacy-policy/
+pageTitle: "Privacy policy — FerrerVersion"
+pageDescription: "Privacy policy for Jorge Ferrer Gil's website (FerrerVersion): what data is collected, why, and how to exercise your rights."
+---
+{% from "partials/icons.njk" import icon %}
+{% set homePath = "/en/" | url %}
+<article class="legal-hero container">
+  <a class="case-hero__back link-underline" href="{{ homePath }}">
+    {{ icon("arrow-right") }} {{ t.nav.inicio }}
+  </a>
+  <h1 class="legal-hero__title">{{ t.legal.privacidad }}</h1>
+  <p class="legal-hero__updated">{{ t.legal.actualizado }}</p>
+</article>
+
+<section class="container legal">
+  <h2>1. Data controller</h2>
+  <p>Jorge Ferrer Gil, based in Buñol, Valencia (Spain). Contact: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.</p>
+
+  <h2>2. What data is collected</h2>
+  <p>The contact form on this site collects the following data: name, email, project type, and the message you write.</p>
+  <p>Right now, this form uses your own device's email client (a "mailto" link): clicking "Send inquiry" opens your email app with this information already drafted, and it's up to you to decide whether to send it. This means that, for now, this data <strong>does not pass through any server or intermediate service</strong> — it travels directly from your email app to the owner's inbox. If a third-party form service is integrated in the future, this policy will be updated to identify that data processor.</p>
+
+  <h2>3. Purpose</h2>
+  <p>To respond to business inquiries sent through the form or through the site's contact channels (email, WhatsApp).</p>
+
+  <h2>4. Legal basis</h2>
+  <p>The data subject's consent, given by voluntarily filling in and submitting the form (Art. 6.1.a of the General Data Protection Regulation, GDPR).</p>
+
+  <h2>5. Data retention</h2>
+  <p>Data will be kept for as long as necessary to handle your inquiry, and will not be used for a different purpose without your additional consent.</p>
+
+  <h2>6. Recipients and data processors</h2>
+  <p>Data is not shared with third parties, except where legally required. As long as the form works via "mailto" (see point 2), no external data processor is involved.</p>
+
+  <h2>7. Your rights</h2>
+  <p>You can exercise your rights of access, rectification, erasure, objection, restriction of processing and data portability by writing to <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>, stating which right you'd like to exercise.</p>
+
+  <p class="legal__disclaimer">{{ t.legal.disclaimer }}</p>
+</section>

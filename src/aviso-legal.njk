@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+lang: es
+esUrl: /aviso-legal/
+enUrl: /en/legal-notice/
+pageTitle: "Aviso legal — FerrerVersion"
+pageDescription: "Aviso legal del sitio web de Jorge Ferrer Gil (FerrerVersion): identificación del titular, condiciones de uso y propiedad intelectual."
+---
+{% from "partials/icons.njk" import icon %}
+{% set homePath = "/" | url %}
+<article class="legal-hero container">
+  <a class="case-hero__back link-underline" href="{{ homePath }}">
+    {{ icon("arrow-right") }} {{ t.nav.inicio }}
+  </a>
+  <h1 class="legal-hero__title">{{ t.legal.avisoLegal }}</h1>
+  <p class="legal-hero__updated">{{ t.legal.actualizado }}</p>
+</article>
+
+<section class="container legal">
+  <h2>1. Datos identificativos del titular</h2>
+  <ul>
+    <li><strong>Titular:</strong> Jorge Ferrer Gil</li>
+    <li><strong>Actividad:</strong> Desarrollo de páginas web, aplicaciones y sistemas a medida, bajo el nombre comercial "FerrerVersion"</li>
+    <li><strong>Ubicación:</strong> Buñol, Valencia (España)</li>
+    <li><strong>Contacto:</strong> <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+  </ul>
+
+  <h2>2. Objeto</h2>
+  <p>Este sitio web (en adelante, "la web") tiene como finalidad presentar los servicios profesionales de desarrollo web y de aplicaciones de Jorge Ferrer Gil, mostrar su portfolio de proyectos y facilitar el contacto con potenciales clientes.</p>
+
+  <h2>3. Condiciones de uso</h2>
+  <p>El acceso y uso de esta web atribuye la condición de usuario y supone la aceptación de las condiciones incluidas en este aviso legal. El usuario se compromete a hacer un uso adecuado de los contenidos y servicios que se ofrecen, y a no emplearlos para incurrir en actividades ilícitas o contrarias a la buena fe y al ordenamiento legal.</p>
+
+  <h2>4. Propiedad intelectual e industrial</h2>
+  <p>Los contenidos de esta web (textos, imágenes, código, diseño y el logotipo "FV"/FerrerVersion) son propiedad de Jorge Ferrer Gil, salvo que se indique lo contrario. Las imágenes y datos de los proyectos mostrados en el portfolio pertenecen a sus respectivos contextos (proyecto académico, prácticas profesionales o proyecto personal) y se muestran con fines demostrativos del trabajo realizado.</p>
+
+  <h2>5. Enlaces externos</h2>
+  <p>Esta web puede incluir enlaces a sitios de terceros (por ejemplo, GitHub, LinkedIn o demostraciones de proyectos). El titular no se hace responsable del contenido de dichos sitios externos.</p>
+
+  <h2>6. Limitación de responsabilidad</h2>
+  <p>El titular no garantiza la disponibilidad continuada de la web ni la ausencia total de errores en sus contenidos, y no se responsabiliza de los daños que pudieran derivarse del uso de la información publicada en el sitio.</p>
+
+  <h2>7. Legislación aplicable</h2>
+  <p>Para cualquier controversia relacionada con esta web, será de aplicación la legislación española.</p>
+
+  <p class="legal__disclaimer">{{ t.legal.disclaimer }}</p>
+</section>

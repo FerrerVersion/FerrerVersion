@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+lang: en
+esUrl: /aviso-legal/
+enUrl: /en/legal-notice/
+pageTitle: "Legal notice — FerrerVersion"
+pageDescription: "Legal notice for Jorge Ferrer Gil's website (FerrerVersion): owner identification, terms of use and intellectual property."
+---
+{% from "partials/icons.njk" import icon %}
+{% set homePath = "/en/" | url %}
+<article class="legal-hero container">
+  <a class="case-hero__back link-underline" href="{{ homePath }}">
+    {{ icon("arrow-right") }} {{ t.nav.inicio }}
+  </a>
+  <h1 class="legal-hero__title">{{ t.legal.avisoLegal }}</h1>
+  <p class="legal-hero__updated">{{ t.legal.actualizado }}</p>
+</article>
+
+<section class="container legal">
+  <h2>1. Owner identification</h2>
+  <ul>
+    <li><strong>Owner:</strong> Jorge Ferrer Gil</li>
+    <li><strong>Activity:</strong> Web, application and custom system development, under the trade name "FerrerVersion"</li>
+    <li><strong>Location:</strong> Buñol, Valencia (Spain)</li>
+    <li><strong>Contact:</strong> <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+  </ul>
+
+  <h2>2. Purpose</h2>
+  <p>This website (hereinafter, "the site") presents Jorge Ferrer Gil's professional web and application development services, showcases his project portfolio, and provides a way for potential clients to get in touch.</p>
+
+  <h2>3. Terms of use</h2>
+  <p>Accessing and using this site grants you the status of user and implies acceptance of the conditions included in this legal notice. Users agree to make appropriate use of the content and services offered, and not to use them to engage in unlawful activity or anything contrary to good faith and applicable law.</p>
+
+  <h2>4. Intellectual and industrial property</h2>
+  <p>The content on this site (text, images, code, design and the "FV"/FerrerVersion logo) belongs to Jorge Ferrer Gil, unless otherwise stated. Images and details of the projects shown in the portfolio belong to their respective contexts (an academic project, a professional internship or a personal project) and are shown to demonstrate the work carried out.</p>
+
+  <h2>5. External links</h2>
+  <p>This site may include links to third-party sites (for example, GitHub, LinkedIn or project demos). The owner is not responsible for the content of those external sites.</p>
+
+  <h2>6. Limitation of liability</h2>
+  <p>The owner does not guarantee continuous availability of the site or the complete absence of errors in its content, and is not liable for any damages arising from the use of the information published on the site.</p>
+
+  <h2>7. Applicable law</h2>
+  <p>Spanish law applies to any dispute related to this website.</p>
+
+  <p class="legal__disclaimer">{{ t.legal.disclaimer }}</p>
+</section>
