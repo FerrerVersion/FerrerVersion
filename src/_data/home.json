@@ -120,16 +120,28 @@
         { "period": "Prácticas profesionales", "title": "Desarrollo Android nativo con Kotlin y Firebase", "place": "Lourdes Iniesta — Centro de Salud y Belleza, Valencia" }
       ]
     },
+    "experience": {
+      "kicker": "07 — Experiencia",
+      "heading": "Trayectoria",
+      "lead": "Mi experiencia laboral completa, técnica y no técnica — por si quieres ver el recorrido entero, no solo los proyectos de desarrollo.",
+      "jobs": [
+        { "period": "09/2026 — Actualidad", "title": "Operario de producción", "place": "Faerch, Buñol", "desc": "Turnos rotativos de mañana, tarde y noche en una planta industrial de fabricación de envases, cumpliendo los procedimientos de seguridad y trabajo de la planta." },
+        { "period": "03/2026 — 06/2026", "title": "Desarrollador Android (prácticas DAM)", "place": "Lourdes Iniesta — Centro de Salud y Belleza, Valencia", "desc": "App Android nativa en Kotlin para un cliente real, con Firebase, panel de administración y flujo de venta integrado con WhatsApp Business (ver proyecto completo más arriba, en Portfolio)." },
+        { "period": "06/2025 — 08/2025", "title": "Mozo de almacén", "place": "Gecomplast, Buñol", "desc": "Recepción, verificación y preparación de pedidos, manteniendo el orden del almacén y coordinando con otros departamentos para agilizar la logística." },
+        { "period": "09/2023 — 12/2023", "title": "Técnico informático (prácticas SMR)", "place": "App Informática, Buñol", "desc": "Diagnóstico y reparación de equipos, instalación de sistemas operativos, y modificación de una sección de la web de la empresa con integración de base de datos — mi primer contacto real con desarrollo web." },
+        { "period": "07/2022 — 08/2022", "title": "Peón de mantenimiento y seguridad", "place": "Pinar de Ventamina", "desc": "Vigilancia de instalaciones, labores de socorrista y mantenimiento del orden y la limpieza del recinto." }
+      ]
+    },
     "capabilities": {
-      "kicker": "07 — Capacidades",
+      "kicker": "08 — Capacidades",
       "heading": "Con qué trabajo",
       "lead": "Sin porcentajes ni barras de progreso: estas son las herramientas con las que construyo software real hoy.",
       "groups": [
-        { "title": "Frontend", "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular"] },
-        { "title": "Backend", "items": ["Node.js", "Express", "JWT", "API REST"] },
-        { "title": "Mobile", "items": ["Java", "Kotlin", "Android nativo", "Swift", "SwiftUI"] },
-        { "title": "Bases de datos", "items": ["Firebase", "Firestore", "SQLite"] },
-        { "title": "Herramientas", "items": ["Git y GitHub", "Autenticación de usuarios", "Paneles de administración", "Sistemas operativos", "Redes y sistemas microinformáticos"] }
+        { "title": "Frontend", "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular", "Tailwind CSS", "Vite"] },
+        { "title": "Backend", "items": ["Node.js", "Express", "JWT", "bcrypt", "API REST"] },
+        { "title": "Mobile", "items": ["Java", "Kotlin", "Android nativo", "Swift", "SwiftUI", "Android Studio", "Retrofit", "Glide", "Leaflet"] },
+        { "title": "Bases de datos", "items": ["Firebase Firestore", "Firebase Authentication", "SQLite", "SQL"] },
+        { "title": "Herramientas y sistemas", "items": ["Git y GitHub", "GitHub Pages", "Montaje y reparación de equipos", "Instalación de sistemas operativos", "Redes y sistemas microinformáticos"] }
       ]
     },
     "ctaFinal": {
@@ -138,7 +150,7 @@
       "cta": "Hablemos de tu proyecto"
     },
     "contact": {
-      "kicker": "08 — Contacto",
+      "kicker": "09 — Contacto",
       "intro": "Empecemos con una conversación.",
       "sub": "Escríbeme por el canal que prefieras, o usa el formulario. Normalmente respondo en poco tiempo.",
       "formHeading": "Cuéntame tu proyecto",
@@ -266,16 +278,28 @@
         { "period": "Professional internship", "title": "Native Android development with Kotlin and Firebase", "place": "Lourdes Iniesta — Centro de Salud y Belleza, Valencia" }
       ]
     },
+    "experience": {
+      "kicker": "07 — Experience",
+      "heading": "Track record",
+      "lead": "My full work history, technical and non-technical — in case you want the complete picture, not just the development projects.",
+      "jobs": [
+        { "period": "09/2026 — Present", "title": "Production operator", "place": "Faerch, Buñol", "desc": "Rotating morning, afternoon and night shifts at an industrial packaging manufacturing plant, following the plant's safety and work procedures." },
+        { "period": "03/2026 — 06/2026", "title": "Android developer (DAM internship)", "place": "Lourdes Iniesta — Centro de Salud y Belleza, Valencia", "desc": "Native Android app in Kotlin for a real client, with Firebase, an admin panel and a sales flow integrated with WhatsApp Business (see the full project above, in Portfolio)." },
+        { "period": "06/2025 — 08/2025", "title": "Warehouse assistant", "place": "Gecomplast, Buñol", "desc": "Receiving, checking and preparing orders, keeping the warehouse organized and coordinating with other departments to speed up logistics." },
+        { "period": "09/2023 — 12/2023", "title": "IT technician (SMR internship)", "place": "App Informática, Buñol", "desc": "Diagnosing and repairing equipment, installing operating systems, and modifying a section of the company's website with database integration — my first real contact with web development." },
+        { "period": "07/2022 — 08/2022", "title": "Maintenance and security worker", "place": "Pinar de Ventamina", "desc": "Monitoring facilities, lifeguard duties, and keeping the grounds clean and in order." }
+      ]
+    },
     "capabilities": {
-      "kicker": "07 — Capabilities",
+      "kicker": "08 — Capabilities",
       "heading": "What I work with",
       "lead": "No percentages, no skill bars — these are the tools I use to build real software today.",
       "groups": [
-        { "title": "Frontend", "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular"] },
-        { "title": "Backend", "items": ["Node.js", "Express", "JWT", "REST API"] },
-        { "title": "Mobile", "items": ["Java", "Kotlin", "Native Android", "Swift", "SwiftUI"] },
-        { "title": "Databases", "items": ["Firebase", "Firestore", "SQLite"] },
-        { "title": "Tools", "items": ["Git and GitHub", "User authentication", "Admin panels", "Operating systems", "Networks and microcomputer systems"] }
+        { "title": "Frontend", "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular", "Tailwind CSS", "Vite"] },
+        { "title": "Backend", "items": ["Node.js", "Express", "JWT", "bcrypt", "REST API"] },
+        { "title": "Mobile", "items": ["Java", "Kotlin", "Native Android", "Swift", "SwiftUI", "Android Studio", "Retrofit", "Glide", "Leaflet"] },
+        { "title": "Databases", "items": ["Firebase Firestore", "Firebase Authentication", "SQLite", "SQL"] },
+        { "title": "Tools and systems", "items": ["Git and GitHub", "GitHub Pages", "PC building and repair", "Operating system installation", "Networks and microcomputer systems"] }
       ]
     },
     "ctaFinal": {
@@ -284,7 +308,7 @@
       "cta": "Let's talk about your project"
     },
     "contact": {
-      "kicker": "08 — Contact",
+      "kicker": "09 — Contact",
       "intro": "Let's start with a conversation.",
       "sub": "Reach me through whichever channel you prefer, or use the form. I usually reply quickly.",
       "formHeading": "Tell me about your project",

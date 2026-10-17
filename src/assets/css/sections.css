@@ -420,6 +420,25 @@
   margin-top: var(--sp-1);
 }
 
+.timeline-item__desc {
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+  max-width: 42ch;
+  margin-top: var(--sp-3);
+}
+
+.timeline--grid {
+  margin-top: var(--sp-4);
+}
+
+@media (min-width: 700px) {
+  .timeline--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 var(--sp-12);
+  }
+}
+
 /* ---- Capacidades / tecnologías ---- */
 .capabilities__groups {
   display: grid;

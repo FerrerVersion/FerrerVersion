@@ -264,7 +264,27 @@
   </div>
 </section>
 
-<section class="section" id="capacidades" data-reveal>
+<section class="section" id="experiencia" data-reveal>
+  <div class="container">
+    <div class="section__head">
+      <p class="kicker">{{ h.experience.kicker }}</p>
+      <h2>{{ h.experience.heading }}</h2>
+      <p>{{ h.experience.lead }}</p>
+    </div>
+    <div class="timeline timeline--grid">
+      {% for job in h.experience.jobs %}
+      <div class="timeline-item">
+        <p class="timeline-item__period">{{ job.period }}</p>
+        <p class="timeline-item__title">{{ job.title }}</p>
+        <p class="timeline-item__place">{{ job.place }}</p>
+        <p class="timeline-item__desc">{{ job.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="capacidades" data-reveal>
   <div class="container">
     <div class="section__head">
       <p class="kicker">{{ h.capabilities.kicker }}</p>
