@@ -1,11 +1,11 @@
 {% set homePath = ("/" if lang == "es" else "/en/") | url %}
 <header class="navbar" data-navbar>
   <div class="container navbar__row">
-    <a class="navbar__brand" href="{{ homePath }}" aria-label="{{ site.name }} — {{ t.nav.inicio }}">
+    <a class="navbar__brand" href="{{ homePath }}" aria-label="{{ site.author }} — {{ t.nav.inicio }}">
       <span class="navbar__mark">
         <img src="{{ '/assets/img/fv-mark-96.png' | url }}" alt="" width="96" height="96" loading="eager" />
       </span>
-      <span class="navbar__wordmark">{{ site.name }}</span>
+      <span class="navbar__wordmark">{{ site.author }}</span>
     </a>
 
     <nav class="navbar__links" aria-label="{{ t.nav.inicio }}">

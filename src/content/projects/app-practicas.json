@@ -8,21 +8,80 @@
     "es": "Android nativo · iOS nativo · Panel web",
     "en": "Native Android · Native iOS · Web panel"
   },
-  "tech": ["Kotlin", "Swift", "SwiftUI", "Firebase Auth", "Firestore", "Firebase Hosting", "Cloud Functions", "React", "Vite", "Material Design"],
+  "tech": [
+    "Kotlin",
+    "Swift",
+    "SwiftUI",
+    "Firebase Auth",
+    "Firestore",
+    "Firebase Hosting",
+    "Cloud Functions",
+    "React",
+    "Vite",
+    "Material Design"
+  ],
   "links": {
     "demo": null,
     "github": null,
     "external": null
   },
   "images": [
-    { "src": "/assets/img/proyectos/lourdes/app-inicio-catalogo.jpg", "caption": { "es": "Inicio, catálogo y ficha de producto — Android (Kotlin)", "en": "Home, catalog and product page — Android (Kotlin)" } },
-    { "src": "/assets/img/proyectos/lourdes/app-cesta-citas.jpg", "caption": { "es": "Acceso, cesta con pedido por WhatsApp y reserva de cita", "en": "Sign-in, cart with WhatsApp ordering and appointment booking" } },
-    { "src": "/assets/img/proyectos/lourdes/app-cursos-ios.jpg", "caption": { "es": "Cursos, videoclases de pago y acceso en la versión iOS (SwiftUI)", "en": "Courses, paid video classes and the iOS sign-in (SwiftUI)" } },
-    { "src": "/assets/img/proyectos/lourdes/panel-productos.jpg", "caption": { "es": "Panel de administración (React): catálogo de productos", "en": "Admin panel (React): product catalog" } },
-    { "src": "/assets/img/proyectos/lourdes/panel-producto-nuevo.jpg", "caption": { "es": "Panel: alta de un producto nuevo", "en": "Panel: adding a new product" } },
-    { "src": "/assets/img/proyectos/lourdes/panel-pedidos.jpg", "caption": { "es": "Panel: pedidos con su estado", "en": "Panel: orders and their status" } },
-    { "src": "/assets/img/proyectos/lourdes/panel-citas.jpg", "caption": { "es": "Panel: gestión de citas", "en": "Panel: appointment management" } },
-    { "src": "/assets/img/proyectos/lourdes/panel-videoclases.jpg", "caption": { "es": "Panel: acceso de cada clienta a sus videoclases", "en": "Panel: granting clients access to video classes" } }
+    {
+      "src": "/assets/img/proyectos/lourdes/app-inicio-catalogo.jpg",
+      "caption": {
+        "es": "Inicio, catálogo y ficha de producto — Android (Kotlin)",
+        "en": "Home, catalog and product page — Android (Kotlin)"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/lourdes/app-cesta-citas.jpg",
+      "caption": {
+        "es": "Acceso, cesta con pedido por WhatsApp y reserva de cita",
+        "en": "Sign-in, cart with WhatsApp ordering and appointment booking"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/lourdes/app-cursos-ios.jpg",
+      "caption": {
+        "es": "Cursos, videoclases de pago y acceso en la versión iOS (SwiftUI)",
+        "en": "Courses, paid video classes and the iOS sign-in (SwiftUI)"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/lourdes/panel-productos.jpg",
+      "caption": {
+        "es": "Panel de administración (React): catálogo de productos",
+        "en": "Admin panel (React): product catalog"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/lourdes/panel-producto-nuevo.jpg",
+      "caption": {
+        "es": "Panel: alta de un producto nuevo",
+        "en": "Panel: adding a new product"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/lourdes/panel-pedidos.jpg",
+      "caption": {
+        "es": "Panel: pedidos con su estado",
+        "en": "Panel: orders and their status"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/lourdes/panel-citas.jpg",
+      "caption": {
+        "es": "Panel: gestión de citas",
+        "en": "Panel: appointment management"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/lourdes/panel-videoclases.jpg",
+      "caption": {
+        "es": "Panel: acceso de cada clienta a sus videoclases",
+        "en": "Panel: granting clients access to video classes"
+      }
+    }
   ],
   "es": {
     "nombre": "App para Lourdes Iniesta",
@@ -59,5 +118,12 @@
       "Web panel with full management of content, appointments, orders and users"
     ],
     "resultado": "Delivered to the client with both apps, the panel live, security rules tested and a complete 31-page guide so she can run everything on her own."
+  },
+  "featuredImage": {
+    "src": "/assets/img/proyectos/lourdes/app-destacada.jpg",
+    "caption": {
+      "es": "Inicio y catálogo de la app Android",
+      "en": "Home and catalog of the Android app"
+    }
   }
 }

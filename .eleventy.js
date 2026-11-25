@@ -12,6 +12,10 @@ module.exports = function (eleventyConfig) {
     return (projects || []).find((p) => p.slug === slug);
   });
 
+  eleventyConfig.addFilter("exceptSlug", function (projects, slug) {
+    return (projects || []).filter((p) => p.slug !== slug);
+  });
+
   eleventyConfig.addFilter("pad2", function (n) {
     return String(n).padStart(2, "0");
   });

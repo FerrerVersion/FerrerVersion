@@ -24,6 +24,12 @@
           "label": "Busco",
           "value": "Puesto de desarrollador junior"
         }
+      ],
+      "proof": [
+        "2 apps nativas (Android e iOS) entregadas a una clienta real",
+        "API REST propia en Node.js",
+        "34 pruebas de seguridad antes de publicar",
+        "Kotlin · Swift · Java · React · Angular"
       ]
     },
     "about": {
@@ -32,7 +38,7 @@
       "paragraphs": [
         "Soy Jorge, desarrollador de aplicaciones de Buñol (Valencia). Empecé por el lado más técnico de la informática —montar y reparar equipos, instalar sistemas, resolver incidencias— en el Grado Medio de Sistemas Microinformáticos y Redes, y de ahí di el salto a la programación con el Grado Superior en Desarrollo de Aplicaciones Multiplataforma.",
         "Me siento cómodo trabajando en todas las capas de una aplicación: el modelo de datos, el backend, la app móvil y el panel web. En mi proyecto final construí en solitario un sistema completo para movilidad accesible —app Android en Java, API REST en Node.js y panel en Angular— y en mis prácticas desarrollé para una clienta real dos apps nativas (Kotlin y SwiftUI) y un panel en React sobre Firebase, que entregué funcionando y documentado.",
-        "Me gusta el trabajo bien acabado: documentar lo que hago, probarlo antes de darlo por bueno y explicar las decisiones técnicas con claridad. Ahora quiero aprender de un equipo con experiencia, sea en desarrollo móvil, web o backend."
+        "Me gusta el trabajo bien acabado: antes de publicar las reglas de seguridad de la app de Lourdes las probé contra 34 ataques simulados, y al entregarla preparé una guía de 31 páginas para que ella pudiera gestionarlo todo sin conocimientos técnicos. Ahora quiero aprender de un equipo con experiencia, sea en desarrollo móvil, web o backend."
       ],
       "facts": [
         {
@@ -47,28 +53,31 @@
           "label": "Disponibilidad",
           "value": "Flexibilidad horaria"
         }
-      ]
+      ],
+      "photoAlt": "Foto de Jorge Ferrer Gil"
     },
     "featuredCase": {
       "kicker": "02 — Proyecto destacado",
-      "heading": "MOBII, mi Proyecto de Fin de Ciclo",
-      "lead": "Un sistema completo de tres capas, diseñado y construido en solitario: app Android, API REST propia y panel de administración."
+      "heading": "Dos apps nativas y un panel web para una clienta real",
+      "lead": "Mis prácticas de DAM: desde el análisis hasta la entrega, como único desarrollador, para un centro de salud y belleza de Valencia.",
+      "slug": "app-lourdes-iniesta"
     },
     "portfolio": {
       "kicker": "03 — Proyectos",
-      "heading": "Todo lo que he construido",
+      "heading": "Más proyectos",
       "lead": "Cada proyecto incluye su contexto real: qué problema había, qué decisiones tomé, cómo lo resolví y qué aprendí por el camino."
     },
     "experience": {
       "kicker": "04 — Experiencia",
       "heading": "Trayectoria profesional",
-      "lead": "Mi recorrido completo, técnico y no técnico. Cada trabajo me ha dejado algo: responsabilidad, trato con clientes y saber trabajar en equipo.",
+      "lead": "Primero, mi experiencia en desarrollo y tecnología; después, el resto de mi recorrido, que también me ha enseñado responsabilidad, trato con clientes y trabajo en equipo.",
       "jobs": [
         {
           "period": "09/2026 — Actualidad",
           "title": "Operario de producción",
           "place": "Faerch, Buñol",
-          "desc": "Turnos rotativos en una planta industrial de fabricación de envases, siguiendo los procedimientos de seguridad y calidad de la planta."
+          "desc": "Turnos rotativos en una planta industrial de fabricación de envases, siguiendo los procedimientos de seguridad y calidad de la planta.",
+          "highlight": false
         },
         {
           "period": "03/2026 — 06/2026",
@@ -81,7 +90,8 @@
           "period": "06/2025 — 08/2025",
           "title": "Mozo de almacén",
           "place": "Gecomplast, Buñol",
-          "desc": "Recepción y verificación de mercancías, preparación de pedidos y coordinación con otros departamentos para agilizar la logística."
+          "desc": "Recepción y verificación de mercancías, preparación de pedidos y coordinación con otros departamentos para agilizar la logística.",
+          "highlight": false
         },
         {
           "period": "09/2023 — 12/2023",
@@ -94,9 +104,12 @@
           "period": "07/2022 — 08/2022",
           "title": "Mantenimiento y seguridad",
           "place": "Pinar de Ventamina, Buñol",
-          "desc": "Vigilancia y socorrismo, mantenimiento del recinto y resolución de incidencias."
+          "desc": "Vigilancia y socorrismo, mantenimiento del recinto y resolución de incidencias.",
+          "highlight": false
         }
-      ]
+      ],
+      "devLabel": "Desarrollo",
+      "otherLabel": "Otra experiencia"
     },
     "education": {
       "kicker": "05 — Formación",
@@ -189,16 +202,6 @@
             "Instalación de sistemas operativos",
             "Redes locales"
           ]
-        },
-        {
-          "title": "Forma de trabajar",
-          "items": [
-            "Trabajo en equipo",
-            "Documentación técnica",
-            "Responsabilidad",
-            "Aprendizaje continuo",
-            "Comunicación con el cliente"
-          ]
         }
       ]
     },
@@ -240,6 +243,12 @@
           "label": "Looking for",
           "value": "Junior developer role"
         }
+      ],
+      "proof": [
+        "2 native apps (Android and iOS) delivered to a real client",
+        "Custom REST API in Node.js",
+        "34 security tests before going live",
+        "Kotlin · Swift · Java · React · Angular"
       ]
     },
     "about": {
@@ -248,7 +257,7 @@
       "paragraphs": [
         "I'm Jorge, an application developer from Buñol (Valencia, Spain). I started on the hands-on side of IT — building and repairing computers, installing systems, troubleshooting — in a Technical Diploma in Microcomputer Systems and Networks, and then moved into programming with a Higher Diploma in Multi-platform Application Development.",
         "I'm comfortable working across every layer of an application: the data model, the backend, the mobile app and the web panel. For my final project I built a complete accessible-mobility system on my own — an Android app in Java, a REST API in Node.js and an Angular panel — and during my internship I built two native apps (Kotlin and SwiftUI) and a React panel on Firebase for a real client, delivered working and fully documented.",
-        "I care about finished work: documenting what I do, testing it before calling it done and explaining technical decisions clearly. Now I want to learn from an experienced team, whether in mobile, web or backend development."
+        "I care about finished work: before deploying the security rules for Lourdes's app I tested them against 34 simulated attacks, and at handover I wrote a 31-page guide so she could run everything without any technical background. Now I want to learn from an experienced team, whether in mobile, web or backend development."
       ],
       "facts": [
         {
@@ -263,28 +272,31 @@
           "label": "Availability",
           "value": "Flexible hours"
         }
-      ]
+      ],
+      "photoAlt": "Photo of Jorge Ferrer Gil"
     },
     "featuredCase": {
       "kicker": "02 — Featured project",
-      "heading": "MOBII, my Final Degree Project",
-      "lead": "A complete three-layer system, designed and built on my own: Android app, custom REST API and admin panel."
+      "heading": "Two native apps and a web panel for a real client",
+      "lead": "My DAM internship: from analysis to handover, as the sole developer, for a health and beauty center in Valencia.",
+      "slug": "app-lourdes-iniesta"
     },
     "portfolio": {
       "kicker": "03 — Projects",
-      "heading": "Everything I've built",
+      "heading": "More projects",
       "lead": "Each project includes its real context: what the problem was, which decisions I made, how I solved it and what I learned along the way."
     },
     "experience": {
       "kicker": "04 — Experience",
       "heading": "Work history",
-      "lead": "My full track record, technical and non-technical. Every job has taught me something: responsibility, dealing with customers and working as part of a team.",
+      "lead": "First, my development and IT experience; then the rest of my track record, which has also taught me responsibility, dealing with customers and teamwork.",
       "jobs": [
         {
           "period": "09/2026 — Present",
           "title": "Production operator",
           "place": "Faerch, Buñol",
-          "desc": "Rotating shifts at an industrial packaging plant, following the plant's safety and quality procedures."
+          "desc": "Rotating shifts at an industrial packaging plant, following the plant's safety and quality procedures.",
+          "highlight": false
         },
         {
           "period": "03/2026 — 06/2026",
@@ -297,7 +309,8 @@
           "period": "06/2025 — 08/2025",
           "title": "Warehouse assistant",
           "place": "Gecomplast, Buñol",
-          "desc": "Receiving and checking goods, preparing orders and coordinating with other departments to speed up logistics."
+          "desc": "Receiving and checking goods, preparing orders and coordinating with other departments to speed up logistics.",
+          "highlight": false
         },
         {
           "period": "09/2023 — 12/2023",
@@ -310,9 +323,12 @@
           "period": "07/2022 — 08/2022",
           "title": "Maintenance and security",
           "place": "Pinar de Ventamina, Buñol",
-          "desc": "Security and lifeguard duties, grounds maintenance and incident handling."
+          "desc": "Security and lifeguard duties, grounds maintenance and incident handling.",
+          "highlight": false
         }
-      ]
+      ],
+      "devLabel": "Development",
+      "otherLabel": "Other experience"
     },
     "education": {
       "kicker": "05 — Education",
@@ -404,16 +420,6 @@
             "PC building and repair",
             "Operating system installation",
             "Local networks"
-          ]
-        },
-        {
-          "title": "How I work",
-          "items": [
-            "Teamwork",
-            "Technical documentation",
-            "Responsibility",
-            "Continuous learning",
-            "Client communication"
           ]
         }
       ]
