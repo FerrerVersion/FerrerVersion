@@ -139,6 +139,11 @@
       <a class="btn btn-primary" href="{{ (("/proyectos/" if lang == "es" else "/en/proyectos/") + mobii.slug + "/") | url }}">
         {{ t.case.verProyectoCompleto }} {{ icon("arrow-right") }}
       </a>
+      {% if mobii.links.github %}
+      <a class="btn btn-secondary" href="{{ mobii.links.github }}" target="_blank" rel="noopener">
+        {{ t.case.verCodigo }} {{ icon("arrow-up-right") }}
+      </a>
+      {% endif %}
       {% if mobii.links.memoria %}
       <a class="btn btn-secondary" href="{{ mobii.links.memoria | url }}">
         {{ t.case.verMemoria }} {{ icon("arrow-up-right") }}
