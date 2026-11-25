@@ -8,29 +8,56 @@
     "es": "Android nativo · iOS nativo · Panel web",
     "en": "Native Android · Native iOS · Web panel"
   },
-  "tech": ["Kotlin", "Swift", "SwiftUI", "Firebase", "Firestore", "Firebase Auth", "React", "WhatsApp Business API"],
+  "tech": ["Kotlin", "Swift", "SwiftUI", "Firebase Auth", "Firestore", "Firebase Hosting", "Cloud Functions", "React", "Vite", "Material Design"],
   "links": {
     "demo": null,
     "github": null,
     "external": null
   },
   "images": [
-    { "src": "/assets/img/proyectos/lourdes/login-ios.jpg", "caption": { "es": "Pantalla de acceso — versión iOS (SwiftUI)", "en": "Sign-in screen — iOS version (SwiftUI)" } }
+    { "src": "/assets/img/proyectos/lourdes/app-inicio-catalogo.jpg", "caption": { "es": "Inicio, catálogo y ficha de producto — Android (Kotlin)", "en": "Home, catalog and product page — Android (Kotlin)" } },
+    { "src": "/assets/img/proyectos/lourdes/app-cesta-citas.jpg", "caption": { "es": "Acceso, cesta con pedido por WhatsApp y reserva de cita", "en": "Sign-in, cart with WhatsApp ordering and appointment booking" } },
+    { "src": "/assets/img/proyectos/lourdes/app-cursos-ios.jpg", "caption": { "es": "Cursos, videoclases de pago y acceso en la versión iOS (SwiftUI)", "en": "Courses, paid video classes and the iOS sign-in (SwiftUI)" } },
+    { "src": "/assets/img/proyectos/lourdes/panel-productos.jpg", "caption": { "es": "Panel de administración (React): catálogo de productos", "en": "Admin panel (React): product catalog" } },
+    { "src": "/assets/img/proyectos/lourdes/panel-producto-nuevo.jpg", "caption": { "es": "Panel: alta de un producto nuevo", "en": "Panel: adding a new product" } },
+    { "src": "/assets/img/proyectos/lourdes/panel-pedidos.jpg", "caption": { "es": "Panel: pedidos con su estado", "en": "Panel: orders and their status" } },
+    { "src": "/assets/img/proyectos/lourdes/panel-citas.jpg", "caption": { "es": "Panel: gestión de citas", "en": "Panel: appointment management" } },
+    { "src": "/assets/img/proyectos/lourdes/panel-videoclases.jpg", "caption": { "es": "Panel: acceso de cada clienta a sus videoclases", "en": "Panel: granting clients access to video classes" } }
   ],
   "es": {
     "nombre": "App para Lourdes Iniesta",
-    "resumen": "App nativa para Android e iOS, con panel de administración web, construida durante mis prácticas para Lourdes Iniesta, entrenadora personal y creadora de contenido fitness: catálogo de productos, reserva de citas y videoclases de pago, todo conectado a Firebase.",
-    "problema": "Lourdes gestionaba sus citas, su catálogo de productos y el acceso a sus videoclases de forma manual, a través de WhatsApp e Instagram, sin ningún sistema centralizado ni una app propia para sus clientas.",
-    "miPapel": "Prácticas de Grado Superior (DAM), siete semanas: desde el análisis inicial de necesidades y la evaluación de tecnologías (nativo vs. Flutter vs. React Native vs. PWA) hasta el desarrollo completo de la app Android, la versión nativa para iOS y el panel de administración web.",
-    "solucion": "Dos apps nativas —Android en Kotlin e iOS en Swift/SwiftUI— conectadas a un backend compartido en Firebase (Firestore, Storage) con autenticación por email y SMS vía Firebase Authentication: catálogo de productos, reserva de citas con selector de fecha y hora, videoclases con acceso condicionado a la compra (si no está comprada, redirige a WhatsApp) y perfil de usuario. Un panel de administración en React con CRUD completo permite a Lourdes gestionar productos, citas, cursos y pedidos sin depender de nadie.",
-    "arquitectura": "Antes de escribir código se evaluaron cuatro opciones —Android nativo, Flutter, React Native y PWA— y se optó por nativo con Firebase por el rendimiento, el control total de la UI y que la mayoría de las clientas de Lourdes usan Android; más adelante se construyó también la versión nativa para iOS. Android, iOS y el panel web comparten el mismo backend en Firebase, sin necesidad de una API intermedia."
+    "resumen": "Apps nativas para Android e iOS y un panel de administración web para Lourdes Iniesta, centro de salud y belleza en Valencia: catálogo de productos, reserva de citas, cursos y videoclases de pago, todo sobre un mismo backend en Firebase.",
+    "problema": "Lourdes gestionaba sus citas, su catálogo de productos y el acceso a sus cursos y videoclases a mano, por WhatsApp e Instagram, sin ningún sistema centralizado ni una app propia para sus clientas.",
+    "miPapel": "Prácticas de Grado Superior (DAM), de marzo a junio de 2026, como único desarrollador: análisis de necesidades, elección de tecnología, diseño de la base de datos, desarrollo de la app Android, la versión iOS y el panel web, seguridad, pruebas y la entrega final con guía de uso para la clienta.",
+    "solucion": "Dos apps nativas —Android en Kotlin e iOS en Swift/SwiftUI— y un panel en React, conectados al mismo proyecto de Firebase. Las clientas se registran con email o con verificación por SMS, consultan el catálogo (95 productos) con ofertas, hacen pedidos por WhatsApp o desde la cesta, reservan citas, solicitan cursos y ven las videoclases que han comprado. Desde el panel, Lourdes gestiona productos, servicios, cursos, videoclases, textos de la app, citas, pedidos y usuarias sin depender de nadie.",
+    "arquitectura": "Antes de programar se evaluaron cuatro opciones —Android nativo, Flutter, React Native y PWA— y se eligió nativo por rendimiento y control de la interfaz. Android, iOS y el panel web hablan directamente con Firestore, sin API intermedia: la seguridad vive en las reglas de Firestore, que limitan a cada clienta a sus propios datos y reservan la escritura del contenido al rol de administradora. El panel se publica en Firebase Hosting y los pagos con tarjeta quedan preparados con Cloud Functions y Stripe, listos para activarse.",
+    "aprendizajes": "Mantener dos apps nativas y un panel sobre el mismo modelo de datos obliga a ser muy riguroso con los nombres de campos y los índices: un campo con distinto nombre en Android y en iOS basta para que un pedido no aparezca. También aprendí a pensar la seguridad desde el principio: probé las reglas en el emulador de Firebase con 34 escenarios de ataque (acceso anónimo, escalada a administradora, falsificar un pago, leer datos de otra clienta) antes de publicarlas. Y que entregar es más que el código: preparé la firma de la app, el traspaso del proyecto y una guía paso a paso para alguien sin conocimientos técnicos.",
+    "funcionalidades": [
+      "Registro con email o verificación por SMS, y recuperación de contraseña",
+      "Catálogo con categorías, buscador, ofertas y cesta",
+      "Pedidos por WhatsApp o guardados en la app",
+      "Reserva de citas por servicio y franja horaria",
+      "Cursos y videoclases con acceso solo tras la compra",
+      "Panel web con gestión completa de contenido, citas, pedidos y usuarias"
+    ],
+    "resultado": "Proyecto entregado a la clienta con las dos apps, el panel publicado, las reglas de seguridad probadas y una guía completa de 31 páginas para que pueda gestionarlo todo sola."
   },
   "en": {
     "nombre": "App for Lourdes Iniesta",
-    "resumen": "A native Android and iOS app, with a web admin panel, built during my internship for Lourdes Iniesta, a personal trainer and fitness content creator: product catalog, appointment booking and paid video classes, all connected to Firebase.",
-    "problema": "Lourdes managed her appointments, product catalog and access to her video classes manually, through WhatsApp and Instagram, with no centralized system and no app of her own for her clients.",
-    "miPapel": "A seven-week Higher Diploma (DAM) internship: from the initial needs analysis and technology evaluation (native vs. Flutter vs. React Native vs. PWA) to the full development of the Android app, the native iOS version and the web admin panel.",
-    "solucion": "Two native apps — Android in Kotlin and iOS in Swift/SwiftUI — connected to a shared Firebase backend (Firestore, Storage) with email and SMS authentication via Firebase Authentication: a product catalog, appointment booking with a date/time picker, video classes with purchase-gated access (redirecting to WhatsApp if not purchased) and a user profile. A React admin panel with full CRUD lets Lourdes manage products, appointments, courses and orders independently.",
-    "arquitectura": "Before writing any code, four options were evaluated — native Android, Flutter, React Native and a PWA — and native with Firebase was chosen for its performance, full UI control, and because most of Lourdes's clients use Android; a native iOS version was built later on. Android, iOS and the web panel all share the same Firebase backend, with no need for an intermediate API."
+    "resumen": "Native Android and iOS apps and a web admin panel for Lourdes Iniesta, a health and beauty center in Valencia: product catalog, appointment booking, courses and paid video classes, all on a single Firebase backend.",
+    "problema": "Lourdes managed her appointments, product catalog and access to her courses and video classes by hand, through WhatsApp and Instagram, with no centralized system and no app of her own for her clients.",
+    "miPapel": "Higher Diploma (DAM) internship, March to June 2026, as the sole developer: needs analysis, technology choice, database design, development of the Android app, the iOS version and the web panel, security, testing and final handover with a user guide for the client.",
+    "solucion": "Two native apps — Android in Kotlin and iOS in Swift/SwiftUI — and a React panel, all connected to the same Firebase project. Clients sign up with email or SMS verification, browse the catalog (95 products) with offers, order through WhatsApp or from the cart, book appointments, request courses and watch the video classes they've bought. From the panel, Lourdes manages products, services, courses, video classes, app content, appointments, orders and users on her own.",
+    "arquitectura": "Before writing any code, four options were evaluated — native Android, Flutter, React Native and a PWA — and native was chosen for performance and UI control. Android, iOS and the web panel talk directly to Firestore with no intermediate API: security lives in the Firestore rules, which restrict each client to her own data and reserve content writes for the admin role. The panel is deployed on Firebase Hosting, and card payments are prepared with Cloud Functions and Stripe, ready to be switched on.",
+    "aprendizajes": "Keeping two native apps and a panel on the same data model demands real discipline with field names and indexes: one field named differently on Android and iOS is enough for an order to go missing. I also learned to design for security from the start: I tested the rules in the Firebase emulator against 34 attack scenarios (anonymous access, privilege escalation to admin, faking a payment, reading another client's data) before deploying them. And that delivering is more than code: I prepared the app signing, the project handover and a step-by-step guide for someone with no technical background.",
+    "funcionalidades": [
+      "Sign-up with email or SMS verification, plus password recovery",
+      "Catalog with categories, search, offers and a cart",
+      "Orders through WhatsApp or saved in the app",
+      "Appointment booking by service and time slot",
+      "Courses and video classes unlocked only after purchase",
+      "Web panel with full management of content, appointments, orders and users"
+    ],
+    "resultado": "Delivered to the client with both apps, the panel live, security rules tested and a complete 31-page guide so she can run everything on her own."
   }
 }

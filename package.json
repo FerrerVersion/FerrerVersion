@@ -2,7 +2,7 @@
   "name": "ferrerversion",
   "version": "1.0.0",
   "private": true,
-  "description": "Portfolio profesional y web comercial de FerrerVersion",
+  "description": "Portafolio profesional de Jorge Ferrer Gil (FerrerVersion)",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",

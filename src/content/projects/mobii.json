@@ -3,12 +3,27 @@
   "order": 1,
   "category": "app",
   "isPlaceholder": false,
-  "year": "2024",
+  "year": "2026",
   "platform": {
     "es": "Android nativo · API REST · Panel web",
     "en": "Native Android · REST API · Web panel"
   },
-  "tech": ["Java", "Android SDK", "Retrofit", "ORMLite", "Glide", "Leaflet", "Node.js", "Express", "JWT", "bcrypt", "SQLite", "Angular", "TypeScript", "RxJS"],
+  "tech": [
+    "Java",
+    "Android SDK",
+    "Retrofit",
+    "ORMLite",
+    "Glide",
+    "Leaflet",
+    "Node.js",
+    "Express",
+    "JWT",
+    "bcrypt",
+    "SQLite",
+    "Angular",
+    "TypeScript",
+    "RxJS"
+  ],
   "links": {
     "demo": null,
     "github": null,
@@ -16,12 +31,48 @@
     "memoria": "/assets/files/MOBII_Memoria_JorgeFerrer.pdf"
   },
   "images": [
-    { "src": "/assets/img/proyectos/mobii/home.jpg", "caption": { "es": "Pantalla principal", "en": "Home screen" } },
-    { "src": "/assets/img/proyectos/mobii/parking.jpg", "caption": { "es": "Aparcamientos adaptados — mapa con favoritos", "en": "Adapted parking — map with favorites" } },
-    { "src": "/assets/img/proyectos/mobii/activities.jpg", "caption": { "es": "Actividades de ocio accesible — lista y mapa", "en": "Accessible leisure activities — list and map" } },
-    { "src": "/assets/img/proyectos/mobii/taxi.jpg", "caption": { "es": "Reserva de taxi adaptado — formulario y citas", "en": "Adapted taxi booking — form and appointments" } },
-    { "src": "/assets/img/proyectos/mobii/centros.jpg", "caption": { "es": "Centros especializados por tipo de discapacidad", "en": "Specialized centers by disability type" } },
-    { "src": "/assets/img/proyectos/mobii/admin.jpg", "caption": { "es": "Panel de administración (Angular)", "en": "Admin panel (Angular)" } }
+    {
+      "src": "/assets/img/proyectos/mobii/home.jpg",
+      "caption": {
+        "es": "Pantalla principal",
+        "en": "Home screen"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/mobii/parking.jpg",
+      "caption": {
+        "es": "Aparcamientos adaptados — mapa con favoritos",
+        "en": "Adapted parking — map with favorites"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/mobii/activities.jpg",
+      "caption": {
+        "es": "Actividades de ocio accesible — lista y mapa",
+        "en": "Accessible leisure activities — list and map"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/mobii/taxi.jpg",
+      "caption": {
+        "es": "Reserva de taxi adaptado — formulario y citas",
+        "en": "Adapted taxi booking — form and appointments"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/mobii/centros.jpg",
+      "caption": {
+        "es": "Centros especializados por tipo de discapacidad",
+        "en": "Specialized centers by disability type"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/mobii/admin.jpg",
+      "caption": {
+        "es": "Panel de administración (Angular)",
+        "en": "Admin panel (Angular)"
+      }
+    }
   ],
   "es": {
     "nombre": "MOBII — Movilidad accesible para todos",

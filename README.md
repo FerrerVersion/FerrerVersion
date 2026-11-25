@@ -1,6 +1,6 @@
 # FerrerVersion
 
-Portfolio profesional y web comercial de Jorge Ferrer. Sitio 100% estático, construido con [Eleventy](https://www.11ty.dev/), pensado para alojarse gratis en GitHub Pages.
+Portafolio profesional de Jorge Ferrer Gil, desarrollador de aplicaciones multiplataforma. Sitio 100% estático, construido con [Eleventy](https://www.11ty.dev/), pensado para alojarse gratis en GitHub Pages.
 
 ## Por qué este stack
 

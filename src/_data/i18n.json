@@ -8,13 +8,15 @@
       "servicios": "Servicios",
       "proyectos": "Proyectos",
       "sobreMi": "Sobre mí",
-      "contacto": "Contacto"
+      "contacto": "Contacto",
+      "experiencia": "Experiencia",
+      "formacion": "Formación"
     },
-    "navCta": "Hablemos",
+    "navCta": "Contactar",
     "menuAbrir": "Abrir menú",
     "menuCerrar": "Cerrar menú",
     "footer": {
-      "desc": "Desarrollo web y aplicaciones a medida para quien necesita convertir una idea en un producto real.",
+      "desc": "Portafolio de Jorge Ferrer Gil, desarrollador de aplicaciones multiplataforma: apps Android e iOS, APIs REST y paneles web.",
       "navegacion": "Navegación",
       "conecta": "Conecta",
       "idioma": "Idioma",
@@ -25,11 +27,11 @@
       "avisoLegal": "Aviso legal",
       "privacidad": "Política de privacidad",
       "cookies": "Política de cookies",
-      "actualizado": "Última actualización: octubre de 2026",
+      "actualizado": "Última actualización: noviembre de 2026",
       "disclaimer": "Texto orientativo redactado como punto de partida. Revísalo con un profesional (asesoría o abogado) antes de publicar la web, especialmente si cambias de actividad, formulario de contacto o herramientas de analítica."
     },
     "langSwitchLabel": "Cambiar idioma",
-    "verProyecto": "Ver caso de estudio",
+    "verProyecto": "Ver proyecto",
     "volverProyectos": "Volver a proyectos",
     "irAlDetalle": "Ver todos los proyectos",
     "case": {
@@ -85,13 +87,15 @@
       "servicios": "Services",
       "proyectos": "Projects",
       "sobreMi": "About",
-      "contacto": "Contact"
+      "contacto": "Contact",
+      "experiencia": "Experience",
+      "formacion": "Education"
     },
-    "navCta": "Let's talk",
+    "navCta": "Get in touch",
     "menuAbrir": "Open menu",
     "menuCerrar": "Close menu",
     "footer": {
-      "desc": "Web and custom application development for anyone who needs to turn an idea into a real product.",
+      "desc": "Portfolio of Jorge Ferrer Gil, multi-platform application developer: Android and iOS apps, REST APIs and web panels.",
       "navegacion": "Navigation",
       "conecta": "Connect",
       "idioma": "Language",
@@ -102,11 +106,11 @@
       "avisoLegal": "Legal notice",
       "privacidad": "Privacy policy",
       "cookies": "Cookie policy",
-      "actualizado": "Last updated: October 2026",
+      "actualizado": "Last updated: November 2026",
       "disclaimer": "General-purpose draft text meant as a starting point. Have it reviewed by a professional (a lawyer or advisor) before publishing the site, especially if your business status, contact form or analytics tools change."
     },
     "langSwitchLabel": "Switch language",
-    "verProyecto": "View case study",
+    "verProyecto": "View project",
     "volverProyectos": "Back to projects",
     "irAlDetalle": "View all projects",
     "case": {

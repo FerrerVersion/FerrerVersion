@@ -1,6 +1,6 @@
 {
   "slug": "la-acacia",
-  "order": 1,
+  "order": 3,
   "category": "web",
   "isPlaceholder": false,
   "year": "2026",
@@ -8,14 +8,25 @@
     "es": "Sitio web",
     "en": "Website"
   },
-  "tech": ["React", "TypeScript", "Tailwind CSS", "Vite"],
+  "tech": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Vite"
+  ],
   "links": {
     "demo": "/demos/la-acacia/",
     "github": null,
     "external": null
   },
   "images": [
-    { "src": "/assets/img/proyectos/la-acacia/hero.jpg", "caption": { "es": "Portada del sitio", "en": "Site homepage" } }
+    {
+      "src": "/assets/img/proyectos/la-acacia/hero.jpg",
+      "caption": {
+        "es": "Portada del sitio",
+        "en": "Site homepage"
+      }
+    }
   ],
   "es": {
     "nombre": "La Acacia — Restaurante",

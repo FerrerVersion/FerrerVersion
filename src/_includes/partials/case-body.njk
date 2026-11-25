@@ -79,6 +79,7 @@
     </div>
   </div>
 
+  {% if project.links.demo or project.links.github or project.links.external or project.links.memoria %}
   <div class="case-links">
     {% if project.links.demo %}
     <a class="btn btn-primary" href="{{ project.links.demo | url }}" {% if project.links.demo.startsWith('/') == false %}target="_blank" rel="noopener"{% endif %}>{{ t.case.verDemo }} {{ icon("arrow-up-right") }}</a>
@@ -92,11 +93,30 @@
     {% if project.links.memoria %}
     <a class="btn btn-secondary" href="{{ project.links.memoria | url }}">{{ t.case.verMemoria }} {{ icon("arrow-up-right") }}</a>
     {% endif %}
-    {% if not project.links.demo and not project.links.github and not project.links.external and not project.links.memoria %}
-    <span class="placeholder-note">{{ t.case.enlacePendiente }}</span>
+  </div>
+  {% endif %}
+</section>
+
+{% if c.funcionalidades or c.resultado %}
+<section class="container" style="margin-bottom: var(--sp-24);">
+  <div class="case-blocks">
+    {% if c.funcionalidades %}
+    <div>
+      <p class="case-block__title">{{ t.case.funcionalidades }}</p>
+      <ul class="featured-case__list">
+        {% for item in c.funcionalidades %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if c.resultado %}
+    <div>
+      <p class="case-block__title">{{ t.case.resultado }}</p>
+      <p class="case-block__text">{{ c.resultado }}</p>
+    </div>
     {% endif %}
   </div>
 </section>
+{% endif %}
 
 {% if c.arquitectura or c.aprendizajes %}
 <section class="section section--alt">
