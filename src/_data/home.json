@@ -28,6 +28,7 @@
       "proof": [
         "2 apps nativas (Android e iOS) entregadas a una clienta real",
         "API REST propia en Node.js",
+        "Motor de rutas A* propio sobre mapas reales",
         "34 pruebas de seguridad antes de publicar",
         "Kotlin · Swift · Java · React · Angular"
       ]
@@ -166,7 +167,10 @@
             "Angular",
             "RxJS",
             "Tailwind CSS",
-            "Vite"
+            "Vite",
+            "Zustand",
+            "Leaflet",
+            "PWA"
           ]
         },
         {
@@ -192,7 +196,9 @@
             "Xcode",
             "Firebase Hosting",
             "GitHub Pages",
-            "Eleventy"
+            "Eleventy",
+            "Vitest",
+            "Playwright"
           ]
         },
         {
@@ -247,6 +253,7 @@
       "proof": [
         "2 native apps (Android and iOS) delivered to a real client",
         "Custom REST API in Node.js",
+        "Custom A* routing engine on real maps",
         "34 security tests before going live",
         "Kotlin · Swift · Java · React · Angular"
       ]
@@ -385,7 +392,10 @@
             "Angular",
             "RxJS",
             "Tailwind CSS",
-            "Vite"
+            "Vite",
+            "Zustand",
+            "Leaflet",
+            "PWA"
           ]
         },
         {
@@ -411,7 +421,9 @@
             "Xcode",
             "Firebase Hosting",
             "GitHub Pages",
-            "Eleventy"
+            "Eleventy",
+            "Vitest",
+            "Playwright"
           ]
         },
         {

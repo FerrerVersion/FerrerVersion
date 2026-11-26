@@ -1,0 +1,110 @@
+{
+  "slug": "atlas",
+  "order": 3,
+  "category": "web",
+  "isPlaceholder": false,
+  "year": "2026",
+  "platform": {
+    "es": "Aplicación web (PWA) · Ordenador y móvil",
+    "en": "Web app (PWA) · Desktop and mobile"
+  },
+  "tech": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Zustand",
+    "Leaflet",
+    "OpenStreetMap",
+    "PWA",
+    "Vitest",
+    "Playwright"
+  ],
+  "links": {
+    "demo": "https://ferrerversion.github.io/Atlas/",
+    "github": "https://github.com/FerrerVersion/Atlas",
+    "external": null
+  },
+  "images": [
+    {
+      "src": "/assets/img/proyectos/atlas/ruta-valencia-bunol.jpg",
+      "caption": {
+        "es": "Ruta real Valencia → Buñol calculada con el motor A* propio",
+        "en": "Real Valencia → Buñol route computed by the custom A* engine"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/atlas/estilos.jpg",
+      "caption": {
+        "es": "Algunos de los 15 estilos de mapa: cyberpunk, blueprint, arcade, fantasía, dibujo a mano y blanco y negro",
+        "en": "Some of the 15 map styles: cyberpunk, blueprint, arcade, fantasy, hand-drawn and black & white"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/atlas/ruta.jpg",
+      "caption": {
+        "es": "Ruta con parada intermedia e instrucciones paso a paso",
+        "en": "Route with an intermediate stop and turn-by-turn directions"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/atlas/explorar.jpg",
+      "caption": {
+        "es": "Búsqueda de lugares y puntos de interés reales de OpenStreetMap",
+        "en": "Search for real places and points of interest from OpenStreetMap"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/atlas/movil-mapa.jpg",
+      "caption": {
+        "es": "Versión móvil, instalable como app",
+        "en": "Mobile version, installable as an app"
+      }
+    },
+    {
+      "src": "/assets/img/proyectos/atlas/mapa-personalizado.jpg",
+      "caption": {
+        "es": "Editor de mapas personalizados: calibración, nodos, vías y rutas A* sobre tu propia imagen",
+        "en": "Custom map editor: calibration, nodes, roads and A* routes over your own image"
+      }
+    }
+  ],
+  "es": {
+    "nombre": "Atlas — Navegación con mapas reales",
+    "resumen": "Aplicación web de navegación con datos reales de OpenStreetMap, motor de rutas A* programado desde cero, navegación paso a paso con GPS y 15 estilos visuales de mapa. Se puede usar desde el navegador o instalar en el móvil.",
+    "problema": "Quería entender cómo funciona por dentro una app como Google Maps: de dónde salen los datos, cómo se calcula una ruta sobre miles de calles reales y cómo se convierte una línea en instrucciones del tipo «en la rotonda, toma la 2.ª salida». En lugar de usar una API de rutas ya hecha, me propuse construir yo el motor.",
+    "miPapel": "Proyecto personal diseñado y desarrollado en solitario: interfaz, motor de rutas, integración con los servicios de OpenStreetMap, sistema de estilos, modo sin conexión, pruebas automáticas y publicación.",
+    "solucion": "Una web de navegación completa: búsqueda de ciudades, calles y lugares con autocompletado; rutas en coche o a pie con varias paradas, sentidos únicos, rotondas y límites de velocidad; navegación en tiempo real con el GPS del móvil que recalcula la ruta si te desvías; instrucciones por voz; 15 estilos de mapa intercambiables; favoritos e historial; y un editor para trazar rutas sobre mapas propios. Ningún nombre geográfico se inventa: todo procede de OpenStreetMap.",
+    "arquitectura": "React 19 y TypeScript en modo estricto con Vite, Tailwind CSS v4, Zustand para el estado y Leaflet para el mapa. La lógica está separada de la interfaz: el motor de rutas (grafo, A* e instrucciones) es código puro y testeado; la búsqueda usa Photon y Nominatim tras una interfaz intercambiable; las calles y puntos de interés se descargan de Overpass por zonas y se guardan en IndexedDB. Es una PWA: la app y las teselas ya vistas quedan en el dispositivo y el mapa visitado funciona sin conexión. 113 pruebas unitarias con Vitest y pruebas de navegador con Playwright.",
+    "aprendizajes": "El reto principal fue que las rutas fueran realistas y rápidas sin un servidor propio. Los tiempos se estiman según la curvatura de cada tramo, con aceleración y frenado, y no solo con el límite de velocidad. Para trayectos largos no se puede descargar toda la red viaria, así que la app baja por trozos las calles cercanas a cada parada, un anillo de acceso y un corredor de vías principales. Con descargas en paralelo, precarga y caché, la ruta Valencia → Buñol pasó de 16,5 s a 7,9 s, y una segunda visita en un móvil lento carga en 0,6 s.",
+    "funcionalidades": [
+      "Motor de rutas A* propio sobre la red viaria real: sentidos únicos, rotondas, coche o a pie, ruta más rápida o más corta",
+      "Navegación paso a paso con GPS en tiempo real, voz y recálculo automático al desviarse",
+      "Paradas múltiples que se pueden añadir, reordenar arrastrando e invertir",
+      "Búsqueda de lugares, calles y 12 categorías de puntos de interés reales",
+      "15 estilos visuales de mapa y modo noche",
+      "Funciona sin conexión e instalable como app (PWA)",
+      "Editor de mapas personalizados con calibración y exportación a JSON"
+    ],
+    "resultado": "Aplicación publicada y abierta a cualquiera desde el navegador, con el código en GitHub, 113 pruebas automáticas y documentación técnica completa del motor de rutas."
+  },
+  "en": {
+    "nombre": "Atlas — Navigation with real maps",
+    "resumen": "A navigation web app built on real OpenStreetMap data, with an A* routing engine written from scratch, GPS turn-by-turn navigation and 15 visual map styles. Use it in the browser or install it on your phone.",
+    "problema": "I wanted to understand how an app like Google Maps works under the hood: where the data comes from, how a route is computed over thousands of real streets, and how a line becomes directions like \"at the roundabout, take the 2nd exit\". Instead of using an off-the-shelf routing API, I set out to build the engine myself.",
+    "miPapel": "A personal project designed and built solo: interface, routing engine, OpenStreetMap service integration, styling system, offline mode, automated tests and deployment.",
+    "solucion": "A complete navigation web app: search for cities, streets and places with autocomplete; car or walking routes with multiple stops, one-way streets, roundabouts and speed limits; real-time navigation using the phone's GPS that reroutes when you go off course; voice directions; 15 switchable map styles; favorites and history; and an editor to draw routes over your own maps. No place name is made up: everything comes from OpenStreetMap.",
+    "arquitectura": "React 19 and strict TypeScript with Vite, Tailwind CSS v4, Zustand for state and Leaflet for the map. Logic is kept apart from the UI: the routing engine (graph, A* and directions) is pure, tested code; search uses Photon and Nominatim behind a swappable interface; streets and points of interest are downloaded from Overpass by area and cached in IndexedDB. It's a PWA: the app and previously seen tiles stay on the device, so a visited map works offline. 113 unit tests with Vitest plus browser tests with Playwright.",
+    "aprendizajes": "The main challenge was making routes realistic and fast without a server of my own. Travel times are estimated from the curvature of each segment, with acceleration and braking, not just the speed limit. For long trips the whole road network can't be downloaded, so the app fetches, in chunks, the streets near each stop, an access ring and a corridor of main roads. With parallel downloads, prefetching and caching, the Valencia → Buñol route went from 16.5 s to 7.9 s, and a repeat visit on a slow phone loads in 0.6 s.",
+    "funcionalidades": [
+      "Custom A* routing engine over the real road network: one-way streets, roundabouts, car or walking, fastest or shortest route",
+      "Turn-by-turn navigation with real-time GPS, voice and automatic rerouting",
+      "Multiple stops that can be added, reordered by dragging and reversed",
+      "Search for places, streets and 12 categories of real points of interest",
+      "15 visual map styles and night mode",
+      "Works offline and installs as an app (PWA)",
+      "Custom map editor with calibration and JSON export"
+    ],
+    "resultado": "A live app anyone can use from the browser, with the code on GitHub, 113 automated tests and full technical documentation of the routing engine."
+  }
+}
